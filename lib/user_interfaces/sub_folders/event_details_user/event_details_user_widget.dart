@@ -160,7 +160,9 @@ class _EventDetailsUserWidgetState extends State<EventDetailsUserWidget> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Verdák Quiznight',
+                            FFLocalizations.of(context).getText(
+                              'zsflx2x1' /* Verdák Quiznight */,
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .headlineMedium
                                 .override(
@@ -177,7 +179,9 @@ class _EventDetailsUserWidgetState extends State<EventDetailsUserWidget> {
                                 size: 24.0,
                               ),
                               Text(
-                                '2024 Nov 10., Monday, 6:00 PM',
+                                FFLocalizations.of(context).getText(
+                                  'm1fz12y5' /* 2024 Nov 10., Monday, 6:00 PM */,
+                                ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
@@ -196,7 +200,9 @@ class _EventDetailsUserWidgetState extends State<EventDetailsUserWidget> {
                                 size: 24.0,
                               ),
                               Text(
-                                'Párduc Bár',
+                                FFLocalizations.of(context).getText(
+                                  'hk8n5oj9' /* Párduc Bár */,
+                                ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
@@ -215,7 +221,9 @@ class _EventDetailsUserWidgetState extends State<EventDetailsUserWidget> {
                                 size: 24.0,
                               ),
                               Text(
-                                '23 elérhető hely',
+                                FFLocalizations.of(context).getText(
+                                  'wg7m8i09' /* 23 elérhető hely */,
+                                ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
@@ -235,7 +243,9 @@ class _EventDetailsUserWidgetState extends State<EventDetailsUserWidget> {
                               onPressed: () {
                                 print('Button pressed ...');
                               },
-                              text: 'Foglalok!',
+                              text: FFLocalizations.of(context).getText(
+                                'z781q6ax' /* Foglalok! */,
+                              ),
                               options: FFButtonOptions(
                                 height: 50.0,
                                 padding: const EdgeInsetsDirectional.fromSTEB(
@@ -262,7 +272,9 @@ class _EventDetailsUserWidgetState extends State<EventDetailsUserWidget> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Az eseményről',
+                            FFLocalizations.of(context).getText(
+                              'zxjclqkx' /* Az eseményről */,
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .headlineSmall
                                 .override(
@@ -271,7 +283,9 @@ class _EventDetailsUserWidgetState extends State<EventDetailsUserWidget> {
                                 ),
                           ),
                           Text(
-                            '🏎️ Készen állsz egy száguldó estére?\nCsatlakozz hozzánk a Párduc Bárban, ahol egy különleges \"Verdák\" tematikájú quiznight keretében mérheted össze tudásod barátaiddal és más rajongókkal! Legyen szó a Villám McQueen legendás idézeteiről, a Radiátor-fürdő titkairól vagy a Pixar-filmek apró részleteiről, itt minden a Verdák világáról fog szólni.\n\n🎉 Mi vár rád?\n\nInteraktív kvízkérdések és játékok\nSzuper nyeremények az est legjobbjainak\nEgyedülálló hangulat a Párduc Bár elegáns környezetében\nKülönleges Verdák témájú italok és snackek\n📝 Hogyan jelentkezhetsz?\nHozd el a csapatodat (maximum 5 fő), vagy játssz egyedül! Regisztrálj előre a Párduc Bár weboldalán vagy személyesen a helyszínen. A helyek száma korlátozott, ezért ne maradj le!\n\n🚦 Tedd próbára a tudásodat, és élvezd az estét egy igazán különleges társaságban!\nNe felejtsd otthon a Verdák-rajongói kedvedet – várunk téged és barátaidat január 21-én a Párduc Bárban!\n\n💨 Villám McQueen szavaival élve: KACHOW!',
+                            FFLocalizations.of(context).getText(
+                              'lo42b3ow' /* 🏎️ Készen állsz egy száguldó ... */,
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
@@ -294,7 +308,9 @@ class _EventDetailsUserWidgetState extends State<EventDetailsUserWidget> {
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Text(
-                                'Részletek',
+                                FFLocalizations.of(context).getText(
+                                  '54yzk90w' /* Részletek */,
+                                ),
                                 style: FlutterFlowTheme.of(context)
                                     .headlineSmall
                                     .override(
@@ -308,7 +324,9 @@ class _EventDetailsUserWidgetState extends State<EventDetailsUserWidget> {
                                     MainAxisAlignment.spaceBetween,
                                 children: [
                                   Text(
-                                    'Duration',
+                                    FFLocalizations.of(context).getText(
+                                      'vns208cg' /* Duration */,
+                                    ),
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
@@ -317,32 +335,9 @@ class _EventDetailsUserWidgetState extends State<EventDetailsUserWidget> {
                                         ),
                                   ),
                                   Text(
-                                    '2.5 hours',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily: 'Inter',
-                                          letterSpacing: 0.0,
-                                        ),
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Text(
-                                    'Dress Code',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily: 'Inter',
-                                          letterSpacing: 0.0,
-                                        ),
-                                  ),
-                                  Text(
-                                    'Smart Casual',
+                                    FFLocalizations.of(context).getText(
+                                      'g9nwgde1' /* 2.5 hours */,
+                                    ),
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
@@ -358,7 +353,9 @@ class _EventDetailsUserWidgetState extends State<EventDetailsUserWidget> {
                                     MainAxisAlignment.spaceBetween,
                                 children: [
                                   Text(
-                                    'Age Restriction',
+                                    FFLocalizations.of(context).getText(
+                                      'z2vh4kpm' /* Dress Code */,
+                                    ),
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
@@ -367,7 +364,38 @@ class _EventDetailsUserWidgetState extends State<EventDetailsUserWidget> {
                                         ),
                                   ),
                                   Text(
-                                    '18+',
+                                    FFLocalizations.of(context).getText(
+                                      'cfj6isiy' /* Smart Casual */,
+                                    ),
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .override(
+                                          fontFamily: 'Inter',
+                                          letterSpacing: 0.0,
+                                        ),
+                                  ),
+                                ],
+                              ),
+                              Row(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    FFLocalizations.of(context).getText(
+                                      '87cli5dp' /* Age Restriction */,
+                                    ),
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .override(
+                                          fontFamily: 'Inter',
+                                          letterSpacing: 0.0,
+                                        ),
+                                  ),
+                                  Text(
+                                    FFLocalizations.of(context).getText(
+                                      'mc74plaf' /* 18+ */,
+                                    ),
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(

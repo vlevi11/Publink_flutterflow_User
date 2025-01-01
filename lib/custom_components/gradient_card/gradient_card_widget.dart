@@ -106,7 +106,9 @@ class _GradientCardWidgetState extends State<GradientCardWidget> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              'Verdák Quiznight ',
+                              FFLocalizations.of(context).getText(
+                                'lr5um9l5' /* Verdák Quiznight  */,
+                              ),
                               style: FlutterFlowTheme.of(context)
                                   .headlineSmall
                                   .override(
@@ -118,7 +120,9 @@ class _GradientCardWidgetState extends State<GradientCardWidget> {
                             Align(
                               alignment: const AlignmentDirectional(-1.0, 0.0),
                               child: Text(
-                                'Szerda, 20:00',
+                                FFLocalizations.of(context).getText(
+                                  '2667oisc' /* Szerda, 20:00 */,
+                                ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
@@ -134,7 +138,9 @@ class _GradientCardWidgetState extends State<GradientCardWidget> {
                           onPressed: () {
                             print('Button pressed ...');
                           },
-                          text: 'Megyek',
+                          text: FFLocalizations.of(context).getText(
+                            '31o2cajx' /* Megyek */,
+                          ),
                           options: FFButtonOptions(
                             width: 80.0,
                             height: 35.0,

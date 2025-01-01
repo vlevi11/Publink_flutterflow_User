@@ -66,7 +66,9 @@ class _PasswordManagementUserWidgetState
               },
             ),
             Text(
-              'Back',
+              FFLocalizations.of(context).getText(
+                'pj29yqbr' /* Back */,
+              ),
               style: FlutterFlowTheme.of(context).displaySmall.override(
                     fontFamily: 'Inter Tight',
                     fontSize: 16.0,
@@ -123,7 +125,9 @@ class _PasswordManagementUserWidgetState
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               12.0, 0.0, 0.0, 0.0),
                           child: Text(
-                            'Back',
+                            FFLocalizations.of(context).getText(
+                              'otij5yr1' /* Back */,
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
@@ -139,7 +143,9 @@ class _PasswordManagementUserWidgetState
               Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 20.0),
                 child: Text(
-                  'Jelszó módosítás',
+                  FFLocalizations.of(context).getText(
+                    'ljv0diqj' /* Jelszó módosítás */,
+                  ),
                   style: FlutterFlowTheme.of(context).headlineMedium.override(
                         fontFamily: 'Inter Tight',
                         letterSpacing: 0.0,
@@ -153,7 +159,9 @@ class _PasswordManagementUserWidgetState
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      'Régi jelszó',
+                      FFLocalizations.of(context).getText(
+                        'u097d69z' /* Régi jelszó */,
+                      ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Inter',
                             letterSpacing: 0.0,
@@ -184,7 +192,9 @@ class _PasswordManagementUserWidgetState
                               padding: const EdgeInsetsDirectional.fromSTEB(
                                   5.0, 0.0, 0.0, 0.0),
                               child: Text(
-                                'Elfelejtett jelszó?',
+                                FFLocalizations.of(context).getText(
+                                  'a4pjt3dr' /* Elfelejtett jelszó? */,
+                                ),
                                 textAlign: TextAlign.end,
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -213,7 +223,9 @@ class _PasswordManagementUserWidgetState
                     autofillHints: const [AutofillHints.email],
                     obscureText: false,
                     decoration: InputDecoration(
-                      hintText: 'Add meg a régi jelszavad',
+                      hintText: FFLocalizations.of(context).getText(
+                        'xrrkdtpo' /* Add meg a régi jelszavad */,
+                      ),
                       hintStyle:
                           FlutterFlowTheme.of(context).labelMedium.override(
                                 fontFamily: 'Inter',
@@ -271,7 +283,9 @@ class _PasswordManagementUserWidgetState
               Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(16.0, 20.0, 0.0, 0.0),
                 child: Text(
-                  'Új jelszó',
+                  FFLocalizations.of(context).getText(
+                    'qbvd437d' /* Új jelszó */,
+                  ),
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Inter',
                         letterSpacing: 0.0,
@@ -288,7 +302,9 @@ class _PasswordManagementUserWidgetState
                     autofillHints: const [AutofillHints.email],
                     obscureText: false,
                     decoration: InputDecoration(
-                      hintText: 'Min. 6 karakter',
+                      hintText: FFLocalizations.of(context).getText(
+                        'qwy5ngy8' /* Min. 6 karakter */,
+                      ),
                       hintStyle:
                           FlutterFlowTheme.of(context).labelMedium.override(
                                 fontFamily: 'Inter',
@@ -351,7 +367,9 @@ class _PasswordManagementUserWidgetState
                     onPressed: () {
                       print('Button-Login pressed ...');
                     },
-                    text: 'Mentés',
+                    text: FFLocalizations.of(context).getText(
+                      'vwwfmt7g' /* Mentés */,
+                    ),
                     options: FFButtonOptions(
                       width: 270.0,
                       height: 50.0,

@@ -1,3 +1,4 @@
+import '/flutter_flow/flutter_flow_language_selector.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -44,7 +45,9 @@ class _ProfileUserWidgetState extends State<ProfileUserWidget> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              'Profil',
+              FFLocalizations.of(context).getText(
+                'buhm6tl1' /* Profil */,
+              ),
               style: FlutterFlowTheme.of(context).displaySmall.override(
                     fontFamily: 'Inter Tight',
                     letterSpacing: 0.0,
@@ -118,7 +121,9 @@ class _ProfileUserWidgetState extends State<ProfileUserWidget> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              'Elaine Edwards',
+                              FFLocalizations.of(context).getText(
+                                'qiuth01c' /* Elaine Edwards */,
+                              ),
                               style: FlutterFlowTheme.of(context)
                                   .headlineSmall
                                   .override(
@@ -130,7 +135,9 @@ class _ProfileUserWidgetState extends State<ProfileUserWidget> {
                               padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 4.0, 0.0, 0.0),
                               child: Text(
-                                'elaine.edwards@google.com',
+                                FFLocalizations.of(context).getText(
+                                  'csppmt8c' /* elaine.edwards@google.com */,
+                                ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodySmall
                                     .override(
@@ -179,7 +186,9 @@ class _ProfileUserWidgetState extends State<ProfileUserWidget> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              'Sötét Módra Váltás',
+                              FFLocalizations.of(context).getText(
+                                'um957l2s' /* Sötét Módra Váltás */,
+                              ),
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
@@ -265,7 +274,9 @@ class _ProfileUserWidgetState extends State<ProfileUserWidget> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              'Switch to Light Mode',
+                              FFLocalizations.of(context).getText(
+                                '2gfx7yml' /* Switch to Light Mode */,
+                              ),
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
@@ -342,7 +353,9 @@ class _ProfileUserWidgetState extends State<ProfileUserWidget> {
                     padding:
                         const EdgeInsetsDirectional.fromSTEB(24.0, 12.0, 0.0, 12.0),
                     child: Text(
-                      'Fiók beállítások',
+                      FFLocalizations.of(context).getText(
+                        'iv671xe9' /* Fiók beállítások */,
+                      ),
                       style: FlutterFlowTheme.of(context).labelMedium.override(
                             fontFamily: 'Inter',
                             letterSpacing: 0.0,
@@ -402,7 +415,9 @@ class _ProfileUserWidgetState extends State<ProfileUserWidget> {
                             padding: const EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
-                              'Jelszó módosítása',
+                              FFLocalizations.of(context).getText(
+                                'v4p3npbb' /* Jelszó módosítása */,
+                              ),
                               style: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .override(
@@ -462,7 +477,9 @@ class _ProfileUserWidgetState extends State<ProfileUserWidget> {
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               12.0, 0.0, 0.0, 0.0),
                           child: Text(
-                            'Profil beállítások',
+                            FFLocalizations.of(context).getText(
+                              'xscvd7ge' /* Profil beállítások */,
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(
@@ -520,7 +537,9 @@ class _ProfileUserWidgetState extends State<ProfileUserWidget> {
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               12.0, 0.0, 0.0, 0.0),
                           child: Text(
-                            'Adatvédelmi tájékoztató',
+                            FFLocalizations.of(context).getText(
+                              '1zoi7bl3' /* Adatvédelmi tájékoztató */,
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(
@@ -578,7 +597,9 @@ class _ProfileUserWidgetState extends State<ProfileUserWidget> {
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               12.0, 0.0, 0.0, 0.0),
                           child: Text(
-                            'Értesítési beállítások',
+                            FFLocalizations.of(context).getText(
+                              't5ihrbyp' /* Értesítési beállítások */,
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(
@@ -603,6 +624,86 @@ class _ProfileUserWidgetState extends State<ProfileUserWidget> {
                 ),
               ),
               Padding(
+                padding: const EdgeInsetsDirectional.fromSTEB(20.0, 12.0, 20.0, 0.0),
+                child: Container(
+                  width: double.infinity,
+                  height: 60.0,
+                  decoration: BoxDecoration(
+                    color: FlutterFlowTheme.of(context).secondaryBackground,
+                    boxShadow: const [
+                      BoxShadow(
+                        blurRadius: 5.0,
+                        color: Color(0x3416202A),
+                        offset: Offset(
+                          0.0,
+                          2.0,
+                        ),
+                      )
+                    ],
+                    borderRadius: BorderRadius.circular(12.0),
+                    shape: BoxShape.rectangle,
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Icon(
+                          Icons.language_sharp,
+                          color: FlutterFlowTheme.of(context).primaryText,
+                          size: 24.0,
+                        ),
+                        Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              12.0, 0.0, 0.0, 0.0),
+                          child: Text(
+                            FFLocalizations.of(context).getText(
+                              'a8u4spyw' /* Nyelv */,
+                            ),
+                            style: FlutterFlowTheme.of(context)
+                                .labelMedium
+                                .override(
+                                  fontFamily: 'Inter',
+                                  letterSpacing: 0.0,
+                                ),
+                          ),
+                        ),
+                        Flexible(
+                          child: Align(
+                            alignment: const AlignmentDirectional(0.9, 0.0),
+                            child: FlutterFlowLanguageSelector(
+                              width: 150.0,
+                              height: 40.0,
+                              backgroundColor:
+                                  FlutterFlowTheme.of(context).alternate,
+                              borderColor: Colors.transparent,
+                              dropdownIconColor:
+                                  FlutterFlowTheme.of(context).secondaryText,
+                              borderRadius: 8.0,
+                              textStyle: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .override(
+                                    fontFamily: 'Inter',
+                                    letterSpacing: 0.0,
+                                  ),
+                              hideFlags: false,
+                              flagSize: 24.0,
+                              flagTextGap: 8.0,
+                              currentLanguage:
+                                  FFLocalizations.of(context).languageCode,
+                              languages: FFLocalizations.languages(),
+                              onChanged: (lang) =>
+                                  setAppLanguage(context, lang),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 20.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
@@ -612,7 +713,9 @@ class _ProfileUserWidgetState extends State<ProfileUserWidget> {
                       onPressed: () {
                         print('Button pressed ...');
                       },
-                      text: 'Kijelentkezés',
+                      text: FFLocalizations.of(context).getText(
+                        'jtktcv9h' /* Kijelentkezés */,
+                      ),
                       options: FFButtonOptions(
                         width: 110.0,
                         height: 40.0,

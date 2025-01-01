@@ -73,7 +73,9 @@ class _EventsUserWidgetState extends State<EventsUserWidget> {
                                   fontFamily: 'Inter',
                                   letterSpacing: 0.0,
                                 ),
-                        hintText: 'Események keresése',
+                        hintText: FFLocalizations.of(context).getText(
+                          'dv3ho1eh' /* Események keresése */,
+                        ),
                         hintStyle:
                             FlutterFlowTheme.of(context).labelMedium.override(
                                   fontFamily: 'Inter',
@@ -242,7 +244,10 @@ class _EventsUserWidgetState extends State<EventsUserWidget> {
                                                 size: 24.0,
                                               ),
                                               Text(
-                                                'Hello World',
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  'iwhgjnj3' /* Hello World */,
+                                                ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
@@ -296,7 +301,10 @@ class _EventsUserWidgetState extends State<EventsUserWidget> {
                                                 size: 24.0,
                                               ),
                                               Text(
-                                                'XX',
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  '0hpwjbv7' /* XX */,
+                                                ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
@@ -310,7 +318,10 @@ class _EventsUserWidgetState extends State<EventsUserWidget> {
                                                     .fromSTEB(
                                                         5.0, 0.0, 0.0, 0.0),
                                                 child: Text(
-                                                  'Elérhető',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    '5lufkisr' /* Elérhető */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -330,7 +341,11 @@ class _EventsUserWidgetState extends State<EventsUserWidget> {
                                                       print(
                                                           'Button pressed ...');
                                                     },
-                                                    text: 'Foglalás',
+                                                    text: FFLocalizations.of(
+                                                            context)
+                                                        .getText(
+                                                      '2g5ewfxo' /* Foglalás */,
+                                                    ),
                                                     options: FFButtonOptions(
                                                       width: 120.0,
                                                       height: 30.0,

@@ -67,6 +67,41 @@ class EsemenyekAPICall {
   }
 }
 
+class SignUpCall {
+  static Future<ApiCallResponse> call({
+    String? userName = '',
+    String? userType = '',
+    String? email = '',
+    String? password = '',
+    String? role = '',
+    String? status = '',
+  }) async {
+    return ApiManager.instance.makeApiCall(
+      callName: 'Sign Up',
+      apiUrl: 'https://publink.alsohaz.hu/api/user',
+      callType: ApiCallType.POST,
+      headers: {
+        'Authorization': 'Basic YWRtaW46YWRtaW4=',
+      },
+      params: {
+        'userName': userName,
+        'userType': userType,
+        'email': email,
+        'password': password,
+        'role': role,
+        'status': status,
+      },
+      bodyType: BodyType.X_WWW_FORM_URL_ENCODED,
+      returnBody: true,
+      encodeBodyUtf8: false,
+      decodeUtf8: false,
+      cache: false,
+      isStreamingApi: false,
+      alwaysAllowBody: false,
+    );
+  }
+}
+
 class ApiPagingParams {
   int nextPageNumber = 0;
   int numItems = 0;

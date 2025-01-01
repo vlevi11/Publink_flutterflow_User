@@ -58,7 +58,9 @@ class _ImagesWidgetState extends State<ImagesWidget> {
             ),
           ),
           title: Text(
-            'Képek',
+            FFLocalizations.of(context).getText(
+              'ury959kc' /* Képek */,
+            ),
             style: FlutterFlowTheme.of(context).displaySmall.override(
                   fontFamily: 'Inter Tight',
                   color: FlutterFlowTheme.of(context).alternate,

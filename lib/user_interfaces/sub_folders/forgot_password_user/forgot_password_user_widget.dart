@@ -60,7 +60,9 @@ class _ForgotPasswordUserWidgetState extends State<ForgotPasswordUserWidget> {
         title: Padding(
           padding: const EdgeInsetsDirectional.fromSTEB(4.0, 0.0, 0.0, 0.0),
           child: Text(
-            'Back',
+            FFLocalizations.of(context).getText(
+              'xbeier9i' /* Back */,
+            ),
             style: FlutterFlowTheme.of(context).displaySmall.override(
                   fontFamily: 'Inter Tight',
                   fontSize: 16.0,
@@ -116,7 +118,9 @@ class _ForgotPasswordUserWidgetState extends State<ForgotPasswordUserWidget> {
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               12.0, 0.0, 0.0, 0.0),
                           child: Text(
-                            'Back',
+                            FFLocalizations.of(context).getText(
+                              '510nox90' /* Back */,
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
@@ -132,7 +136,9 @@ class _ForgotPasswordUserWidgetState extends State<ForgotPasswordUserWidget> {
               Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
                 child: Text(
-                  'Forgot Password',
+                  FFLocalizations.of(context).getText(
+                    '74mfbxmo' /* Forgot Password */,
+                  ),
                   style: FlutterFlowTheme.of(context).headlineMedium.override(
                         fontFamily: 'Inter Tight',
                         letterSpacing: 0.0,
@@ -142,7 +148,9 @@ class _ForgotPasswordUserWidgetState extends State<ForgotPasswordUserWidget> {
               Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(16.0, 4.0, 16.0, 4.0),
                 child: Text(
-                  'We will send you an email with a link to reset your password, please enter the email associated with your account below.',
+                  FFLocalizations.of(context).getText(
+                    '2d216euf' /* We will send you an email with... */,
+                  ),
                   style: FlutterFlowTheme.of(context).labelMedium.override(
                         fontFamily: 'Inter',
                         letterSpacing: 0.0,
@@ -159,13 +167,17 @@ class _ForgotPasswordUserWidgetState extends State<ForgotPasswordUserWidget> {
                     autofillHints: const [AutofillHints.email],
                     obscureText: false,
                     decoration: InputDecoration(
-                      labelText: 'Your email address...',
+                      labelText: FFLocalizations.of(context).getText(
+                        'mjwtva3g' /* Your email address... */,
+                      ),
                       labelStyle:
                           FlutterFlowTheme.of(context).labelMedium.override(
                                 fontFamily: 'Inter',
                                 letterSpacing: 0.0,
                               ),
-                      hintText: 'Enter your email...',
+                      hintText: FFLocalizations.of(context).getText(
+                        '68dnyew0' /* Enter your email... */,
+                      ),
                       hintStyle:
                           FlutterFlowTheme.of(context).labelMedium.override(
                                 fontFamily: 'Inter',
@@ -225,7 +237,9 @@ class _ForgotPasswordUserWidgetState extends State<ForgotPasswordUserWidget> {
                     onPressed: () {
                       print('Button-Login pressed ...');
                     },
-                    text: 'Send Link',
+                    text: FFLocalizations.of(context).getText(
+                      '8q48a0t3' /* Send Link */,
+                    ),
                     options: FFButtonOptions(
                       width: 270.0,
                       height: 50.0,

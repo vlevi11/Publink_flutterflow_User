@@ -103,6 +103,32 @@ class _BarDetailsProba1WidgetState extends State<BarDetailsProba1Widget> {
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        appBar: AppBar(
+          backgroundColor: FlutterFlowTheme.of(context).alternate,
+          automaticallyImplyLeading: true,
+          leading: Icon(
+            Icons.arrow_back_ios_new,
+            color: FlutterFlowTheme.of(context).primaryText,
+            size: 24.0,
+          ),
+          title: Align(
+            alignment: const AlignmentDirectional(-1.0, 0.0),
+            child: Text(
+              FFLocalizations.of(context).getText(
+                '2ew4jn6n' /* Vissza */,
+              ),
+              style: FlutterFlowTheme.of(context).bodyMedium.override(
+                    fontFamily: 'Inter',
+                    color: FlutterFlowTheme.of(context).secondaryText,
+                    letterSpacing: 0.0,
+                  ),
+            ),
+          ),
+          actions: const [],
+          centerTitle: true,
+          toolbarHeight: 40.0,
+          elevation: 0.0,
+        ),
         body: SafeArea(
           top: true,
           child: SingleChildScrollView(
@@ -179,7 +205,9 @@ class _BarDetailsProba1WidgetState extends State<BarDetailsProba1Widget> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                        'Tuk Tuk Bár',
+                                        FFLocalizations.of(context).getText(
+                                          'iw0ak780' /* Tuk Tuk Bár */,
+                                        ),
                                         style: FlutterFlowTheme.of(context)
                                             .headlineMedium
                                             .override(
@@ -189,7 +217,9 @@ class _BarDetailsProba1WidgetState extends State<BarDetailsProba1Widget> {
                                             ),
                                       ),
                                       Text(
-                                        'Koktél Bár',
+                                        FFLocalizations.of(context).getText(
+                                          'grzay1ui' /* Koktél Bár */,
+                                        ),
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
@@ -230,7 +260,9 @@ class _BarDetailsProba1WidgetState extends State<BarDetailsProba1Widget> {
                                   size: 24.0,
                                 ),
                                 Text(
-                                  '4.8',
+                                  FFLocalizations.of(context).getText(
+                                    'tu6t2m7e' /* 4.8 */,
+                                  ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyLarge
                                       .override(
@@ -240,7 +272,9 @@ class _BarDetailsProba1WidgetState extends State<BarDetailsProba1Widget> {
                                       ),
                                 ),
                                 Text(
-                                  '• (1094 értékelés)',
+                                  FFLocalizations.of(context).getText(
+                                    's9v6mr4w' /* • (1094 értékelés) */,
+                                  ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
@@ -270,7 +304,9 @@ class _BarDetailsProba1WidgetState extends State<BarDetailsProba1Widget> {
                                   ),
                                 ),
                                 Text(
-                                  'Zárva',
+                                  FFLocalizations.of(context).getText(
+                                    'mycy22y5' /* Zárva */,
+                                  ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyLarge
                                       .override(
@@ -282,7 +318,9 @@ class _BarDetailsProba1WidgetState extends State<BarDetailsProba1Widget> {
                                       ),
                                 ),
                                 Text(
-                                  '| Nyitás 17:00',
+                                  FFLocalizations.of(context).getText(
+                                    'ya80yes6' /* | Nyitás 17:00 */,
+                                  ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
@@ -303,7 +341,9 @@ class _BarDetailsProba1WidgetState extends State<BarDetailsProba1Widget> {
                                 onPressed: () async {
                                   context.pushNamed('images');
                                 },
-                                text: 'Képek',
+                                text: FFLocalizations.of(context).getText(
+                                  'qgeku0ce' /* Képek */,
+                                ),
                                 icon: Icon(
                                   Icons.photo_library,
                                   color:
@@ -338,7 +378,9 @@ class _BarDetailsProba1WidgetState extends State<BarDetailsProba1Widget> {
                                 onPressed: () {
                                   print('Button pressed ...');
                                 },
-                                text: 'Menü',
+                                text: FFLocalizations.of(context).getText(
+                                  'r7aq3goy' /* Menü */,
+                                ),
                                 icon: Icon(
                                   Icons.menu_book,
                                   color:
@@ -373,7 +415,9 @@ class _BarDetailsProba1WidgetState extends State<BarDetailsProba1Widget> {
                                 onPressed: () {
                                   print('Button pressed ...');
                                 },
-                                text: 'Foglalás',
+                                text: FFLocalizations.of(context).getText(
+                                  '2ytwssep' /* Foglalás */,
+                                ),
                                 icon: const Icon(
                                   Icons.people_alt_sharp,
                                   size: 15.0,
@@ -419,7 +463,9 @@ class _BarDetailsProba1WidgetState extends State<BarDetailsProba1Widget> {
                             padding: const EdgeInsetsDirectional.fromSTEB(
                                 10.0, 0.0, 0.0, 0.0),
                             child: Text(
-                              'Események (2)',
+                              FFLocalizations.of(context).getText(
+                                'khphruns' /* Események (2) */,
+                              ),
                               style: FlutterFlowTheme.of(context)
                                   .headlineSmall
                                   .override(
@@ -520,7 +566,10 @@ class _BarDetailsProba1WidgetState extends State<BarDetailsProba1Widget> {
                                               padding: const EdgeInsetsDirectional
                                                   .fromSTEB(8.0, 0.0, 8.0, 0.0),
                                               child: Text(
-                                                'Jazz Est',
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  'm4wj8u4q' /* Jazz Est */,
+                                                ),
                                                 style: FlutterFlowTheme.of(
                                                         context)
                                                     .headlineSmall
@@ -538,7 +587,10 @@ class _BarDetailsProba1WidgetState extends State<BarDetailsProba1Widget> {
                                               padding: const EdgeInsetsDirectional
                                                   .fromSTEB(8.0, 0.0, 8.0, 0.0),
                                               child: Text(
-                                                'Péntek, 21:00',
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  'pu31agjg' /* Péntek, 21:00 */,
+                                                ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
@@ -565,7 +617,11 @@ class _BarDetailsProba1WidgetState extends State<BarDetailsProba1Widget> {
                                                       print(
                                                           'Button pressed ...');
                                                     },
-                                                    text: 'Megyek',
+                                                    text: FFLocalizations.of(
+                                                            context)
+                                                        .getText(
+                                                      '5zhotawu' /* Megyek */,
+                                                    ),
                                                     options: FFButtonOptions(
                                                       width: 100.0,
                                                       height: 36.0,
@@ -652,7 +708,9 @@ class _BarDetailsProba1WidgetState extends State<BarDetailsProba1Widget> {
                         Align(
                           alignment: const AlignmentDirectional(-1.0, 0.0),
                           child: Text(
-                            'Csoportos akciók (3)',
+                            FFLocalizations.of(context).getText(
+                              'srnn6xdq' /* Csoportos akciók (3) */,
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .headlineSmall
                                 .override(
@@ -721,7 +779,10 @@ class _BarDetailsProba1WidgetState extends State<BarDetailsProba1Widget> {
                                                 CrossAxisAlignment.start,
                                             children: [
                                               Text(
-                                                'Ingyenes Shot',
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  'uc34o2w1' /* Ingyenes Shot */,
+                                                ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyLarge
@@ -733,7 +794,10 @@ class _BarDetailsProba1WidgetState extends State<BarDetailsProba1Widget> {
                                                         ),
                                               ),
                                               Text(
-                                                '5+ fős társaságnak',
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  'q662jcjv' /* 5+ fős társaságnak */,
+                                                ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
@@ -799,7 +863,10 @@ class _BarDetailsProba1WidgetState extends State<BarDetailsProba1Widget> {
                                                 CrossAxisAlignment.start,
                                             children: [
                                               Text(
-                                                '20% Kedvezmény',
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  'rzb4g18v' /* 20% Kedvezmény */,
+                                                ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyLarge
@@ -811,7 +878,10 @@ class _BarDetailsProba1WidgetState extends State<BarDetailsProba1Widget> {
                                                         ),
                                               ),
                                               Text(
-                                                '8+ fős társaságnak',
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  '6pffp8wd' /* 8+ fős társaságnak */,
+                                                ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
@@ -877,7 +947,10 @@ class _BarDetailsProba1WidgetState extends State<BarDetailsProba1Widget> {
                                                 CrossAxisAlignment.start,
                                             children: [
                                               Text(
-                                                'Ingyen Csapolás',
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  'vdtmc1uy' /* Ingyen Csapolás */,
+                                                ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyLarge
@@ -889,7 +962,10 @@ class _BarDetailsProba1WidgetState extends State<BarDetailsProba1Widget> {
                                                         ),
                                               ),
                                               Text(
-                                                '10+ fős társaságnak',
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  'egrx4yff' /* 10+ fős társaságnak */,
+                                                ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium

@@ -73,7 +73,9 @@ class _BarsUserWidgetState extends State<BarsUserWidget> {
                                   fontFamily: 'Inter',
                                   letterSpacing: 0.0,
                                 ),
-                        hintText: 'Bárok keresése',
+                        hintText: FFLocalizations.of(context).getText(
+                          'zonfpqvs' /* Bárok keresése */,
+                        ),
                         hintStyle:
                             FlutterFlowTheme.of(context).labelMedium.override(
                                   fontFamily: 'Inter',
@@ -338,7 +340,10 @@ class _BarsUserWidgetState extends State<BarsUserWidget> {
                                                     ),
                                                   ),
                                                   Text(
-                                                    'Max kapacitás:',
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                      'kaku0mac' /* Max kapacitás: */,
+                                                    ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
                                                         .bodyMedium

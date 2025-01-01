@@ -57,7 +57,9 @@ class _NotificationUserWidgetState extends State<NotificationUserWidget> {
             ),
           ),
           title: Text(
-            'Notifications',
+            FFLocalizations.of(context).getText(
+              '8345q1uk' /* Notifications */,
+            ),
             style: FlutterFlowTheme.of(context).headlineLarge.override(
                   fontFamily: 'Inter Tight',
                   letterSpacing: 0.0,
@@ -131,7 +133,9 @@ class _NotificationUserWidgetState extends State<NotificationUserWidget> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                'Friend Request',
+                                FFLocalizations.of(context).getText(
+                                  'h7ffo5lg' /* Friend Request */,
+                                ),
                                 maxLines: 1,
                                 style: FlutterFlowTheme.of(context)
                                     .bodyLarge
@@ -144,7 +148,9 @@ class _NotificationUserWidgetState extends State<NotificationUserWidget> {
                                 padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 4.0, 0.0, 0.0),
                                 child: Text(
-                                  'John Smith has requested to be friends.',
+                                  FFLocalizations.of(context).getText(
+                                    'jv0qssus' /* John Smith has requested to be... */,
+                                  ),
                                   maxLines: 2,
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
@@ -201,7 +207,9 @@ class _NotificationUserWidgetState extends State<NotificationUserWidget> {
                                             CrossAxisAlignment.start,
                                         children: [
                                           Text(
-                                            'Haily Brown',
+                                            FFLocalizations.of(context).getText(
+                                              'k4968vlr' /* Haily Brown */,
+                                            ),
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyLarge
                                                 .override(
@@ -214,7 +222,10 @@ class _NotificationUserWidgetState extends State<NotificationUserWidget> {
                                                 const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 0.0),
                                             child: Text(
-                                              '@brownisthenewblack',
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                'c4k034ib' /* @brownisthenewblack */,
+                                              ),
                                               style:
                                                   FlutterFlowTheme.of(context)
                                                       .labelSmall
@@ -234,7 +245,9 @@ class _NotificationUserWidgetState extends State<NotificationUserWidget> {
                                 padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 8.0, 0.0, 4.0),
                                 child: Text(
-                                  '2 hours ago',
+                                  FFLocalizations.of(context).getText(
+                                    'jjn3qyxw' /* 2 hours ago */,
+                                  ),
                                   style: FlutterFlowTheme.of(context)
                                       .labelSmall
                                       .override(
@@ -309,7 +322,9 @@ class _NotificationUserWidgetState extends State<NotificationUserWidget> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                'Friend Request',
+                                FFLocalizations.of(context).getText(
+                                  '4f0bu9pr' /* Friend Request */,
+                                ),
                                 maxLines: 1,
                                 style: FlutterFlowTheme.of(context)
                                     .bodyLarge
@@ -322,7 +337,9 @@ class _NotificationUserWidgetState extends State<NotificationUserWidget> {
                                 padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 4.0, 0.0, 0.0),
                                 child: Text(
-                                  'John Smith has requested to be friends.',
+                                  FFLocalizations.of(context).getText(
+                                    'ko39ti0y' /* John Smith has requested to be... */,
+                                  ),
                                   maxLines: 2,
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
@@ -379,7 +396,9 @@ class _NotificationUserWidgetState extends State<NotificationUserWidget> {
                                             CrossAxisAlignment.start,
                                         children: [
                                           Text(
-                                            'John Smith',
+                                            FFLocalizations.of(context).getText(
+                                              'j559d4qy' /* John Smith */,
+                                            ),
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyLarge
                                                 .override(
@@ -392,7 +411,10 @@ class _NotificationUserWidgetState extends State<NotificationUserWidget> {
                                                 const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 0.0),
                                             child: Text(
-                                              '@johnsmithly',
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                'cy90hghk' /* @johnsmithly */,
+                                              ),
                                               style:
                                                   FlutterFlowTheme.of(context)
                                                       .labelSmall
@@ -412,7 +434,9 @@ class _NotificationUserWidgetState extends State<NotificationUserWidget> {
                                 padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 8.0, 0.0, 4.0),
                                 child: Text(
-                                  '2 hours ago',
+                                  FFLocalizations.of(context).getText(
+                                    'g64y1zc5' /* 2 hours ago */,
+                                  ),
                                   style: FlutterFlowTheme.of(context)
                                       .labelSmall
                                       .override(
@@ -487,7 +511,9 @@ class _NotificationUserWidgetState extends State<NotificationUserWidget> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                'New Comment!',
+                                FFLocalizations.of(context).getText(
+                                  's1uzkdat' /* New Comment! */,
+                                ),
                                 maxLines: 1,
                                 style: FlutterFlowTheme.of(context)
                                     .bodyLarge
@@ -500,7 +526,9 @@ class _NotificationUserWidgetState extends State<NotificationUserWidget> {
                                 padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 4.0, 0.0, 0.0),
                                 child: Text(
-                                  '\"You are so awesome! Keep it up!\"',
+                                  FFLocalizations.of(context).getText(
+                                    'dpq4ntwe' /* "You are so awesome! Keep it u... */,
+                                  ),
                                   maxLines: 2,
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
@@ -530,7 +558,9 @@ class _NotificationUserWidgetState extends State<NotificationUserWidget> {
                                 padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 8.0, 0.0, 4.0),
                                 child: Text(
-                                  '2 hours ago',
+                                  FFLocalizations.of(context).getText(
+                                    '66bf6bnx' /* 2 hours ago */,
+                                  ),
                                   style: FlutterFlowTheme.of(context)
                                       .labelSmall
                                       .override(
@@ -605,7 +635,9 @@ class _NotificationUserWidgetState extends State<NotificationUserWidget> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                'New Like!',
+                                FFLocalizations.of(context).getText(
+                                  'd41q2jp3' /* New Like! */,
+                                ),
                                 maxLines: 1,
                                 style: FlutterFlowTheme.of(context)
                                     .bodyLarge
@@ -618,7 +650,9 @@ class _NotificationUserWidgetState extends State<NotificationUserWidget> {
                                 padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 4.0, 0.0, 0.0),
                                 child: Text(
-                                  'You have a new like from John Smith.',
+                                  FFLocalizations.of(context).getText(
+                                    'byxzpel6' /* You have a new like from John ... */,
+                                  ),
                                   maxLines: 2,
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
@@ -635,7 +669,9 @@ class _NotificationUserWidgetState extends State<NotificationUserWidget> {
                                 padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 8.0, 0.0, 4.0),
                                 child: Text(
-                                  '2 hours ago',
+                                  FFLocalizations.of(context).getText(
+                                    'it8yexzx' /* 2 hours ago */,
+                                  ),
                                   style: FlutterFlowTheme.of(context)
                                       .labelSmall
                                       .override(
