@@ -166,19 +166,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'hu': 'Foglalok!',
       'en': '',
     },
-    'gpvxr9s8': {
-      'hu': 'Foglalásaim',
-      'en': '',
-    },
-    'f01ek3py': {
-      'hu': 'Main Header',
-      'en': '',
-    },
-    'p9bnndzt': {
-      'hu':
-          'I’ll be working on a few different proposals, let me know when you’ve got time to go over them before the weekend.',
-      'en': '',
-    },
   },
   // Events_user
   {
