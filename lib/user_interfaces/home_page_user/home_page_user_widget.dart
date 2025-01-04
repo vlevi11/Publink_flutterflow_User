@@ -1,3 +1,4 @@
+import '/auth/custom_auth/auth_util.dart';
 import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
@@ -246,7 +247,9 @@ class _HomePageUserWidgetState extends State<HomePageUserWidget>
                   child: SizedBox(
                     height: 200.0,
                     child: FutureBuilder<ApiCallResponse>(
-                      future: NewsAPICall.call(),
+                      future: NewsAPICall.call(
+                        jwt: currentAuthenticationToken,
+                      ),
                       builder: (context, snapshot) {
                         // Customize what your widget looks like when it's loading.
                         if (!snapshot.hasData) {
@@ -419,7 +422,9 @@ class _HomePageUserWidgetState extends State<HomePageUserWidget>
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 5.0, 0.0, 5.0),
                           child: FutureBuilder<ApiCallResponse>(
-                            future: BarokAPICall.call(),
+                            future: BarokAPICall.call(
+                              jwt: currentAuthenticationToken,
+                            ),
                             builder: (context, snapshot) {
                               // Customize what your widget looks like when it's loading.
                               if (!snapshot.hasData) {
@@ -719,7 +724,9 @@ class _HomePageUserWidgetState extends State<HomePageUserWidget>
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 5.0, 0.0, 5.0),
                           child: FutureBuilder<ApiCallResponse>(
-                            future: EsemenyekAPICall.call(),
+                            future: EsemenyekAPICall.call(
+                              jwt: currentAuthenticationToken,
+                            ),
                             builder: (context, snapshot) {
                               // Customize what your widget looks like when it's loading.
                               if (!snapshot.hasData) {

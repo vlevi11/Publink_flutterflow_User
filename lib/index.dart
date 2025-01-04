@@ -18,3 +18,4 @@ export '/user_interfaces/sub_folders/bar_details_user/bar_details_user_widget.da
     show BarDetailsUserWidget;
 export '/user_interfaces/sub_folders/images/images_widget.dart'
     show ImagesWidget;
+export '/auth2/auth2_widget.dart' show Auth2Widget;

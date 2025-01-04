@@ -1,3 +1,4 @@
+import '/auth/custom_auth/auth_util.dart';
 import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_expanded_image_view.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -82,7 +83,9 @@ class _ImagesWidgetState extends State<ImagesWidget> {
                 child: Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
                   child: FutureBuilder<ApiCallResponse>(
-                    future: ImagesAPICall.call(),
+                    future: ImagesAPICall.call(
+                      jwt: currentAuthenticationToken,
+                    ),
                     builder: (context, snapshot) {
                       // Customize what your widget looks like when it's loading.
                       if (!snapshot.hasData) {

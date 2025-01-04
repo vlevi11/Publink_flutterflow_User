@@ -1,3 +1,4 @@
+import '/auth/custom_auth/auth_util.dart';
 import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -140,7 +141,9 @@ class _BarsUserWidgetState extends State<BarsUserWidget> {
                       padding:
                           const EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 0.0, 0.0),
                       child: FutureBuilder<ApiCallResponse>(
-                        future: BarokAPICall.call(),
+                        future: BarokAPICall.call(
+                          jwt: currentAuthenticationToken,
+                        ),
                         builder: (context, snapshot) {
                           // Customize what your widget looks like when it's loading.
                           if (!snapshot.hasData) {

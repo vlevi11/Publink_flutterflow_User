@@ -392,7 +392,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'ljv0diqj': {
       'hu': 'Jelszó módosítás',
-      'en': 'Change password',
+      'en': 'Password change',
     },
     'u097d69z': {
       'hu': 'Régi jelszó',
@@ -439,7 +439,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'wg7m8i09': {
       'hu': '23 elérhető hely',
-      'en': '23 available places',
+      'en': '23 available locations',
     },
     'z781q6ax': {
       'hu': 'Foglalok!',
@@ -453,7 +453,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'hu':
           '🏎️ Készen állsz egy száguldó estére?\nCsatlakozz hozzánk a Párduc Bárban, ahol egy különleges \"Verdák\" tematikájú quiznight keretében mérheted össze tudásod barátaiddal és más rajongókkal! Legyen szó a Villám McQueen legendás idézeteiről, a Radiátor-fürdő titkairól vagy a Pixar-filmek apró részleteiről, itt minden a Verdák világáról fog szólni.\n\n🎉 Mi vár rád?\n\nInteraktív kvízkérdések és játékok\nSzuper nyeremények az est legjobbjainak\nEgyedülálló hangulat a Párduc Bár elegáns környezetében\nKülönleges Verdák témájú italok és snackek\n📝 Hogyan jelentkezhetsz?\nHozd el a csapatodat (maximum 5 fő), vagy játssz egyedül! Regisztrálj előre a Párduc Bár weboldalán vagy személyesen a helyszínen. A helyek száma korlátozott, ezért ne maradj le!\n\n🚦 Tedd próbára a tudásodat, és élvezd az estét egy igazán különleges társaságban!\nNe felejtsd otthon a Verdák-rajongói kedvedet – várunk téged és barátaidat január 21-én a Párduc Bárban!\n\n💨 Villám McQueen szavaival élve: KACHOW!',
       'en':
-          '🏎️ Are you ready for a fast-paced evening?\nJoin us at Párduc Bar, where you can test your knowledge with your friends and other fans in a special \"Verdák\" themed quiz night! Whether it\'s legendary quotes from Lightning McQueen, the secrets of the Radiator Bath or the little details of Pixar films, everything will be about the world of Verdák here.\n\n🎉 What awaits you?\n\nInteractive quiz questions and games\nSuper prizes for the best of the evening\nUnique atmosphere in the elegant surroundings of Párduc Bar\nSpecial Verdák-themed drinks and snacks\n📝 How to register?\nBring your team (maximum 5 people) or play alone! Register in advance on the Párduc Bar website or in person at the venue. The number of places is limited, so don\'t miss out!\n\n🚦 Test your knowledge and enjoy the evening in a truly special company!\nDon\'t forget your Verdák fan spirit at home – we\'re waiting for you and your friends at the Párduc Bar on January 21st!\n\n💨 In the words of Lightning McQueen: KACHOW!',
+          '🏎️ Are you ready for a fast-paced evening?\nJoin us at Párduc Bár, where you can test your knowledge with your friends and other fans in a special \"Verdák\" themed quiz night! Whether it\'s legendary quotes from Lightning McQueen, the secrets of the Radiator Bath or the little details of Pixar films, everything will be about the world of Verdák here.\n\n🎉 What awaits you?\n\nInteractive quiz questions and games\nSuper prizes for the best of the evening\nUnique atmosphere in the elegant surroundings of Párduc Bár\nSpecial Verdák-themed drinks and snacks\n📝 How to register?\nBring your team (maximum 5 people) or play alone! Register in advance on the Párduc Bár website or in person at the venue. The number of places is limited, so don\'t miss out!\n\n🚦 Test your knowledge and enjoy the evening in a truly special company!\nDon\'t forget your Verdák fan spirit at home – we\'re waiting for you and your friends at the Párduc Bar on January 21st!\n\n💨 In the words of Lightning McQueen: KACHOW!',
     },
     '54yzk90w': {
       'hu': 'Részletek',
@@ -622,6 +622,69 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Pictures',
     },
     'm6ldn345': {
+      'hu': 'Home',
+      'en': 'Home',
+    },
+  },
+  // Auth2
+  {
+    'm0afl1bf': {
+      'hu': 'Publink',
+      'en': 'Publink',
+    },
+    '336g4r6s': {
+      'hu': 'Regisztráció',
+      'en': 'Create Account',
+    },
+    '0kkzncbh': {
+      'hu': 'Regisztráció',
+      'en': 'Create Account',
+    },
+    'incsyeap': {
+      'hu': 'Kezdjük az alábbi űrlap kitöltésével.',
+      'en': 'Let\'s start by filling out the form below.',
+    },
+    'ksl7tvit': {
+      'hu': 'Felhasználónév',
+      'en': 'Username',
+    },
+    '0n4pct2i': {
+      'hu': 'Email',
+      'en': 'E-mail',
+    },
+    'fr0tj6fv': {
+      'hu': 'Jelszó',
+      'en': 'Password',
+    },
+    'p496e1gb': {
+      'hu': 'Kezdjük!',
+      'en': 'Let\'s begin!',
+    },
+    'anoj8zkf': {
+      'hu': 'Belépés',
+      'en': 'Log in',
+    },
+    'lyrn6j6u': {
+      'hu': 'Üdv újra!',
+      'en': 'Welcome back!',
+    },
+    'stoflfde': {
+      'hu': 'Töltse ki az alábbi adatokat, hogy hozzáférjen fiókjához.',
+      'en': 'Fill in the information below to access your account.',
+    },
+    'u5bz9kml': {
+      'hu': 'Email',
+      'en': 'E-mail',
+    },
+    'uo187dku': {
+      'hu': 'Password',
+      'en': 'Password',
+    },
+    'has1b7f9': {
+      'hu': 'Belépés',
+      'en': 'Entry',
+    },
+    'qgqwve8t': {
       'hu': 'Home',
       'en': 'Home',
     },
