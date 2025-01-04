@@ -58,7 +58,7 @@ class _NotificationUserWidgetState extends State<NotificationUserWidget> {
           ),
           title: Text(
             FFLocalizations.of(context).getText(
-              '8345q1uk' /* Notifications */,
+              '8345q1uk' /* Értesítések */,
             ),
             style: FlutterFlowTheme.of(context).headlineLarge.override(
                   fontFamily: 'Inter Tight',

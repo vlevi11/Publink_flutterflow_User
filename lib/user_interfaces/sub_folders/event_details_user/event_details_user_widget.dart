@@ -84,11 +84,11 @@ class _EventDetailsUserWidgetState extends State<EventDetailsUserWidget> {
                   ),
                   child: Stack(
                     children: [
-                      Image.network(
-                        'https://images.unsplash.com/photo-1626814878403-b014e6cd54ba?w=500&h=500',
+                      Image.asset(
+                        'assets/images/lighting-mcqueen.gif',
                         width: MediaQuery.sizeOf(context).width * 1.0,
                         height: MediaQuery.sizeOf(context).height * 0.3,
-                        fit: BoxFit.cover,
+                        fit: BoxFit.contain,
                       ),
                       Container(
                         width: MediaQuery.sizeOf(context).width * 1.0,
@@ -119,8 +119,8 @@ class _EventDetailsUserWidgetState extends State<EventDetailsUserWidget> {
                                   color: Colors.white,
                                   size: 24.0,
                                 ),
-                                onPressed: () {
-                                  print('IconButton pressed ...');
+                                onPressed: () async {
+                                  context.safePop();
                                 },
                               ),
                               FlutterFlowIconButton(
@@ -252,7 +252,7 @@ class _EventDetailsUserWidgetState extends State<EventDetailsUserWidget> {
                                     0.0, 0.0, 0.0, 0.0),
                                 iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
-                                color: FlutterFlowTheme.of(context).tertiary,
+                                color: FlutterFlowTheme.of(context).primary,
                                 textStyle: FlutterFlowTheme.of(context)
                                     .titleMedium
                                     .override(

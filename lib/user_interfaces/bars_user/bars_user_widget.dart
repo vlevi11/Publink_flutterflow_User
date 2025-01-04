@@ -169,7 +169,7 @@ class _BarsUserWidgetState extends State<BarsUserWidget> {
                                 hoverColor: Colors.transparent,
                                 highlightColor: Colors.transparent,
                                 onTap: () async {
-                                  context.pushNamed('bar_details_proba1');
+                                  context.pushNamed('bar_details_user');
                                 },
                                 child: ListView.builder(
                                   padding: const EdgeInsets.fromLTRB(

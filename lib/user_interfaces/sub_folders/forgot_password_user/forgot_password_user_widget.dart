@@ -61,7 +61,7 @@ class _ForgotPasswordUserWidgetState extends State<ForgotPasswordUserWidget> {
           padding: const EdgeInsetsDirectional.fromSTEB(4.0, 0.0, 0.0, 0.0),
           child: Text(
             FFLocalizations.of(context).getText(
-              'xbeier9i' /* Back */,
+              'xbeier9i' /* Vissza */,
             ),
             style: FlutterFlowTheme.of(context).displaySmall.override(
                   fontFamily: 'Inter Tight',
@@ -137,7 +137,7 @@ class _ForgotPasswordUserWidgetState extends State<ForgotPasswordUserWidget> {
                 padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
                 child: Text(
                   FFLocalizations.of(context).getText(
-                    '74mfbxmo' /* Forgot Password */,
+                    '74mfbxmo' /* Elfelejtett jelszó */,
                   ),
                   style: FlutterFlowTheme.of(context).headlineMedium.override(
                         fontFamily: 'Inter Tight',
@@ -149,7 +149,7 @@ class _ForgotPasswordUserWidgetState extends State<ForgotPasswordUserWidget> {
                 padding: const EdgeInsetsDirectional.fromSTEB(16.0, 4.0, 16.0, 4.0),
                 child: Text(
                   FFLocalizations.of(context).getText(
-                    '2d216euf' /* We will send you an email with... */,
+                    '2d216euf' /* Küldünk Neked egy e-mailt a je... */,
                   ),
                   style: FlutterFlowTheme.of(context).labelMedium.override(
                         fontFamily: 'Inter',
@@ -167,19 +167,17 @@ class _ForgotPasswordUserWidgetState extends State<ForgotPasswordUserWidget> {
                     autofillHints: const [AutofillHints.email],
                     obscureText: false,
                     decoration: InputDecoration(
-                      labelText: FFLocalizations.of(context).getText(
-                        'mjwtva3g' /* Your email address... */,
-                      ),
                       labelStyle:
-                          FlutterFlowTheme.of(context).labelMedium.override(
+                          FlutterFlowTheme.of(context).bodyMedium.override(
                                 fontFamily: 'Inter',
                                 letterSpacing: 0.0,
                               ),
+                      alignLabelWithHint: false,
                       hintText: FFLocalizations.of(context).getText(
-                        '68dnyew0' /* Enter your email... */,
+                        '68dnyew0' /* Adja meg e-mail címét... */,
                       ),
                       hintStyle:
-                          FlutterFlowTheme.of(context).labelMedium.override(
+                          FlutterFlowTheme.of(context).bodyMedium.override(
                                 fontFamily: 'Inter',
                                 letterSpacing: 0.0,
                               ),
@@ -216,6 +214,9 @@ class _ForgotPasswordUserWidgetState extends State<ForgotPasswordUserWidget> {
                           FlutterFlowTheme.of(context).secondaryBackground,
                       contentPadding: const EdgeInsetsDirectional.fromSTEB(
                           24.0, 24.0, 20.0, 24.0),
+                      prefixIcon: const Icon(
+                        Icons.email_outlined,
+                      ),
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Inter',

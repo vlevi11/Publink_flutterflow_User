@@ -148,447 +148,536 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   {
     'xwbwh6t4': {
       'hu': 'Bárok',
-      'en': '',
+      'en': 'Bars',
     },
     'ph7gsw49': {
       'hu': '1096 értékelés',
-      'en': '',
+      'en': '1096 reviews',
     },
     'r15600dc': {
       'hu': 'Események',
-      'en': '',
+      'en': 'Events',
     },
     'zcmb4wcr': {
       'hu': 'Elérhető helyek',
-      'en': '',
+      'en': 'Available locations',
     },
     '66yff30v': {
       'hu': 'Foglalok!',
-      'en': '',
+      'en': 'I\'m booking!',
+    },
+    'lkfwvmrd': {
+      'hu': 'Foglalások',
+      'en': 'Reservations',
     },
   },
   // Events_user
   {
     'dv3ho1eh': {
       'hu': 'Események keresése',
-      'en': '',
+      'en': 'Search for events',
     },
     'iwhgjnj3': {
       'hu': 'Hello World',
-      'en': '',
+      'en': 'Hello World',
     },
     '0hpwjbv7': {
       'hu': 'XX',
-      'en': '',
+      'en': 'XX',
     },
     '5lufkisr': {
       'hu': 'Elérhető',
-      'en': '',
+      'en': 'Available',
     },
     '2g5ewfxo': {
       'hu': 'Foglalás',
-      'en': '',
+      'en': 'Reservation',
     },
     'ssxql336': {
       'hu': 'Home',
-      'en': '',
+      'en': 'Home',
     },
   },
   // Bars_user
   {
     'zonfpqvs': {
       'hu': 'Bárok keresése',
-      'en': '',
+      'en': 'Find bars',
     },
     'kaku0mac': {
       'hu': 'Max kapacitás:',
-      'en': '',
+      'en': 'Max capacity:',
     },
     'zmkvzkf5': {
       'hu': 'Home',
-      'en': '',
+      'en': 'Home',
     },
   },
   // Profile_user
   {
     'buhm6tl1': {
       'hu': 'Profil',
-      'en': '',
+      'en': 'Profile',
     },
     'qiuth01c': {
       'hu': 'Elaine Edwards',
-      'en': '',
+      'en': 'Elaine Edwards',
     },
     'csppmt8c': {
       'hu': 'elaine.edwards@google.com',
-      'en': '',
+      'en': 'elaine.edwards@google.com',
     },
     'um957l2s': {
       'hu': 'Sötét Módra Váltás',
-      'en': '',
+      'en': 'Switch to Dark Mode',
     },
     '2gfx7yml': {
       'hu': 'Switch to Light Mode',
-      'en': '',
+      'en': 'Switch to Light Mode',
     },
     'iv671xe9': {
       'hu': 'Fiók beállítások',
-      'en': '',
+      'en': 'Account settings',
     },
     'v4p3npbb': {
       'hu': 'Jelszó módosítása',
-      'en': '',
+      'en': 'Change password',
     },
     'xscvd7ge': {
       'hu': 'Profil beállítások',
-      'en': '',
+      'en': 'Profile settings',
     },
     '1zoi7bl3': {
       'hu': 'Adatvédelmi tájékoztató',
-      'en': '',
+      'en': 'Privacy Policy',
     },
     't5ihrbyp': {
       'hu': 'Értesítési beállítások',
-      'en': '',
+      'en': 'Notification settings',
     },
     'a8u4spyw': {
       'hu': 'Nyelv',
-      'en': '',
+      'en': 'Language',
     },
     'jtktcv9h': {
       'hu': 'Kijelentkezés',
-      'en': '',
+      'en': 'Logout',
     },
     'cszkm7en': {
       'hu': '__',
-      'en': '',
+      'en': '__',
     },
   },
   // Notification_user
   {
     'h7ffo5lg': {
       'hu': 'Friend Request',
-      'en': '',
+      'en': 'Friend Request',
     },
     'jv0qssus': {
       'hu': 'John Smith has requested to be friends.',
-      'en': '',
+      'en': 'John Smith has requested to be friends.',
     },
     'k4968vlr': {
       'hu': 'Haily Brown',
-      'en': '',
+      'en': 'Hailey Brown',
     },
     'c4k034ib': {
       'hu': '@brownisthenewblack',
-      'en': '',
+      'en': '@brownisthenewblack',
     },
     'jjn3qyxw': {
       'hu': '2 hours ago',
-      'en': '',
+      'en': '2 hours ago',
     },
     '4f0bu9pr': {
       'hu': 'Friend Request',
-      'en': '',
+      'en': 'Friend Request',
     },
     'ko39ti0y': {
       'hu': 'John Smith has requested to be friends.',
-      'en': '',
+      'en': 'John Smith has requested to be friends.',
     },
     'j559d4qy': {
       'hu': 'John Smith',
-      'en': '',
+      'en': 'John Smith',
     },
     'cy90hghk': {
       'hu': '@johnsmithly',
-      'en': '',
+      'en': '@johnsmithly',
     },
     'g64y1zc5': {
       'hu': '2 hours ago',
-      'en': '',
+      'en': '2 hours ago',
     },
     's1uzkdat': {
       'hu': 'New Comment!',
-      'en': '',
+      'en': 'New Comment!',
     },
     'dpq4ntwe': {
       'hu': '\"You are so awesome! Keep it up!\"',
-      'en': '',
+      'en': '\"You are so awesome! Keep it up!\"',
     },
     '66bf6bnx': {
       'hu': '2 hours ago',
-      'en': '',
+      'en': '2 hours ago',
     },
     'd41q2jp3': {
       'hu': 'New Like!',
-      'en': '',
+      'en': 'New Like!',
     },
     'byxzpel6': {
       'hu': 'You have a new like from John Smith.',
-      'en': '',
+      'en': 'You have a new like from John Smith.',
     },
     'it8yexzx': {
       'hu': '2 hours ago',
-      'en': '',
+      'en': '2 hours ago',
     },
     '8345q1uk': {
-      'hu': 'Notifications',
-      'en': '',
+      'hu': 'Értesítések',
+      'en': 'Notifications',
     },
     's0bfl94w': {
       'hu': 'Home',
-      'en': '',
+      'en': 'Home',
     },
   },
   // forgot_password_user
   {
     '510nox90': {
       'hu': 'Back',
-      'en': '',
+      'en': 'Back',
     },
     '74mfbxmo': {
-      'hu': 'Forgot Password',
-      'en': '',
+      'hu': 'Elfelejtett jelszó',
+      'en': 'Forgot password?',
     },
     '2d216euf': {
       'hu':
-          'We will send you an email with a link to reset your password, please enter the email associated with your account below.',
-      'en': '',
+          'Küldünk Neked egy e-mailt a jelszó visszaállításához szükséges linkkel. Kérjük, add meg a fiókokhoz tartozó e-mail címet.',
+      'en':
+          'We will send you an email with a link to reset your password. Please enter the email address associated with your account.',
     },
     'mjwtva3g': {
-      'hu': 'Your email address...',
+      'hu': '',
       'en': '',
     },
     '68dnyew0': {
-      'hu': 'Enter your email...',
-      'en': '',
+      'hu': 'Adja meg e-mail címét...',
+      'en': 'Enter your email address...',
     },
     '8q48a0t3': {
       'hu': 'Send Link',
-      'en': '',
+      'en': 'Send Link',
     },
     'xbeier9i': {
-      'hu': 'Back',
-      'en': '',
+      'hu': 'Vissza',
+      'en': 'Back',
     },
     'p24ouufj': {
       'hu': 'Home',
-      'en': '',
+      'en': 'Home',
     },
   },
   // password_management_user
   {
     'pj29yqbr': {
-      'hu': 'Back',
-      'en': '',
+      'hu': 'Vissza',
+      'en': 'Back',
     },
     'otij5yr1': {
       'hu': 'Back',
-      'en': '',
+      'en': 'Back',
     },
     'ljv0diqj': {
       'hu': 'Jelszó módosítás',
-      'en': '',
+      'en': 'Change password',
     },
     'u097d69z': {
       'hu': 'Régi jelszó',
-      'en': '',
+      'en': 'Old password',
     },
     'a4pjt3dr': {
       'hu': 'Elfelejtett jelszó?',
-      'en': '',
+      'en': 'Forgot password?',
     },
     'xrrkdtpo': {
       'hu': 'Add meg a régi jelszavad',
-      'en': '',
+      'en': 'Enter your old password.',
     },
     'qbvd437d': {
       'hu': 'Új jelszó',
-      'en': '',
+      'en': 'New password',
     },
     'qwy5ngy8': {
       'hu': 'Min. 6 karakter',
-      'en': '',
+      'en': 'Min. 6 characters',
     },
     'vwwfmt7g': {
       'hu': 'Mentés',
-      'en': '',
+      'en': 'Rescue',
     },
     'h0hnb00y': {
       'hu': 'Home',
-      'en': '',
+      'en': 'Home',
     },
   },
   // Event_details_user
   {
     'zsflx2x1': {
       'hu': 'Verdák Quiznight',
-      'en': '',
+      'en': 'Verdák Quiznight',
     },
     'm1fz12y5': {
       'hu': '2024 Nov 10., Monday, 6:00 PM',
-      'en': '',
+      'en': '2024 Nov 10, Monday, 6:00 PM',
     },
     'hk8n5oj9': {
       'hu': 'Párduc Bár',
-      'en': '',
+      'en': 'Panther Bar',
     },
     'wg7m8i09': {
       'hu': '23 elérhető hely',
-      'en': '',
+      'en': '23 available places',
     },
     'z781q6ax': {
       'hu': 'Foglalok!',
-      'en': '',
+      'en': 'I\'m booking!',
     },
     'zxjclqkx': {
       'hu': 'Az eseményről',
-      'en': '',
+      'en': 'About the event',
     },
     'lo42b3ow': {
       'hu':
           '🏎️ Készen állsz egy száguldó estére?\nCsatlakozz hozzánk a Párduc Bárban, ahol egy különleges \"Verdák\" tematikájú quiznight keretében mérheted össze tudásod barátaiddal és más rajongókkal! Legyen szó a Villám McQueen legendás idézeteiről, a Radiátor-fürdő titkairól vagy a Pixar-filmek apró részleteiről, itt minden a Verdák világáról fog szólni.\n\n🎉 Mi vár rád?\n\nInteraktív kvízkérdések és játékok\nSzuper nyeremények az est legjobbjainak\nEgyedülálló hangulat a Párduc Bár elegáns környezetében\nKülönleges Verdák témájú italok és snackek\n📝 Hogyan jelentkezhetsz?\nHozd el a csapatodat (maximum 5 fő), vagy játssz egyedül! Regisztrálj előre a Párduc Bár weboldalán vagy személyesen a helyszínen. A helyek száma korlátozott, ezért ne maradj le!\n\n🚦 Tedd próbára a tudásodat, és élvezd az estét egy igazán különleges társaságban!\nNe felejtsd otthon a Verdák-rajongói kedvedet – várunk téged és barátaidat január 21-én a Párduc Bárban!\n\n💨 Villám McQueen szavaival élve: KACHOW!',
-      'en': '',
+      'en':
+          '🏎️ Are you ready for a fast-paced evening?\nJoin us at Párduc Bar, where you can test your knowledge with your friends and other fans in a special \"Verdák\" themed quiz night! Whether it\'s legendary quotes from Lightning McQueen, the secrets of the Radiator Bath or the little details of Pixar films, everything will be about the world of Verdák here.\n\n🎉 What awaits you?\n\nInteractive quiz questions and games\nSuper prizes for the best of the evening\nUnique atmosphere in the elegant surroundings of Párduc Bar\nSpecial Verdák-themed drinks and snacks\n📝 How to register?\nBring your team (maximum 5 people) or play alone! Register in advance on the Párduc Bar website or in person at the venue. The number of places is limited, so don\'t miss out!\n\n🚦 Test your knowledge and enjoy the evening in a truly special company!\nDon\'t forget your Verdák fan spirit at home – we\'re waiting for you and your friends at the Párduc Bar on January 21st!\n\n💨 In the words of Lightning McQueen: KACHOW!',
     },
     '54yzk90w': {
       'hu': 'Részletek',
-      'en': '',
+      'en': 'Details',
     },
     'vns208cg': {
       'hu': 'Duration',
-      'en': '',
+      'en': 'Duration',
     },
     'g9nwgde1': {
       'hu': '2.5 hours',
-      'en': '',
+      'en': '2.5 hours',
     },
     'z2vh4kpm': {
       'hu': 'Dress Code',
-      'en': '',
+      'en': 'Dress Code',
     },
     'cfj6isiy': {
       'hu': 'Smart Casual',
-      'en': '',
+      'en': 'Smart Casual',
     },
     '87cli5dp': {
       'hu': 'Age Restriction',
-      'en': '',
+      'en': 'Age Restriction',
     },
     'mc74plaf': {
       'hu': '18+',
-      'en': '',
+      'en': '18+',
     },
   },
-  // bar_details_proba1
+  // bar_details_user
   {
     'iw0ak780': {
       'hu': 'Tuk Tuk Bár',
-      'en': '',
+      'en': 'Tuk Tuk Bar',
     },
     'grzay1ui': {
       'hu': 'Koktél Bár',
-      'en': '',
-    },
-    'tu6t2m7e': {
-      'hu': '4.8',
-      'en': '',
-    },
-    's9v6mr4w': {
-      'hu': '• (1094 értékelés)',
-      'en': '',
+      'en': 'Cocktail Bar',
     },
     'mycy22y5': {
       'hu': 'Zárva',
-      'en': '',
+      'en': 'Closed',
     },
     'ya80yes6': {
       'hu': '| Nyitás 17:00',
-      'en': '',
+      'en': '| Opening 17:00',
+    },
+    'tu6t2m7e': {
+      'hu': '4.8',
+      'en': '4.8',
+    },
+    's9v6mr4w': {
+      'hu': '• (1094 értékelés)',
+      'en': '• (1094 reviews)',
+    },
+    'sqsberac': {
+      'hu': 'A bár teljes kapacitása:',
+      'en': 'Total bar capacity:',
+    },
+    'h60u3bvq': {
+      'hu': '210 fő',
+      'en': '210 people',
+    },
+    '2kst3rzy': {
+      'hu': 'a bár címe (kattra google mapsre dob)',
+      'en': 'the address of the bar (click to take you to google maps)',
     },
     'qgeku0ce': {
       'hu': 'Képek',
-      'en': '',
+      'en': 'Pictures',
     },
     'r7aq3goy': {
       'hu': 'Menü',
-      'en': '',
+      'en': 'Menu',
     },
     '2ytwssep': {
       'hu': 'Foglalás',
-      'en': '',
+      'en': 'Reservation',
     },
     'khphruns': {
       'hu': 'Események (2)',
-      'en': '',
+      'en': 'Events (2)',
     },
     'm4wj8u4q': {
       'hu': 'Jazz Est',
-      'en': '',
+      'en': 'Jazz Evening',
     },
     'pu31agjg': {
       'hu': 'Péntek, 21:00',
-      'en': '',
+      'en': 'Friday, 9:00 PM',
     },
     '5zhotawu': {
       'hu': 'Megyek',
-      'en': '',
+      'en': 'I\'m going.',
     },
-    'srnn6xdq': {
-      'hu': 'Csoportos akciók (3)',
-      'en': '',
+    '5hucoe3i': {
+      'hu': 'Foglalási kuponok',
+      'en': 'Booking coupons',
     },
-    'uc34o2w1': {
+    'itc4hpnr': {
       'hu': 'Ingyenes Shot',
-      'en': '',
+      'en': 'Free Shot',
     },
-    'q662jcjv': {
+    'il025d4h': {
       'hu': '5+ fős társaságnak',
-      'en': '',
+      'en': 'For a group of 5+ people',
     },
-    'rzb4g18v': {
-      'hu': '20% Kedvezmény',
-      'en': '',
+    'c9njxetg': {
+      'hu': 'Ingyenes Shot',
+      'en': 'Free Shot',
     },
-    '6pffp8wd': {
-      'hu': '8+ fős társaságnak',
-      'en': '',
+    'chfxuy4s': {
+      'hu': '5+ fős társaságnak',
+      'en': 'For a group of 5+ people',
     },
-    'vdtmc1uy': {
-      'hu': 'Ingyen Csapolás',
-      'en': '',
+    'upkr6bk9': {
+      'hu': 'Ingyenes Shot',
+      'en': 'Free Shot',
     },
-    'egrx4yff': {
-      'hu': '10+ fős társaságnak',
-      'en': '',
+    'cdf8psq2': {
+      'hu': '5+ fős társaságnak',
+      'en': 'For a group of 5+ people',
+    },
+    'eqz2y9xy': {
+      'hu': 'Ingyenes Shot',
+      'en': 'Free Shot',
+    },
+    'gpkn1s6t': {
+      'hu': '5+ fős társaságnak',
+      'en': 'For a group of 5+ people',
+    },
+    'p5f98f5c': {
+      'hu': 'Ingyenes Shot',
+      'en': 'Free Shot',
+    },
+    'ocp58woi': {
+      'hu': '5+ fős társaságnak',
+      'en': 'For a group of 5+ people',
+    },
+    'n8mpu3gf': {
+      'hu': 'Ingyenes Shot',
+      'en': 'Free Shot',
+    },
+    '6t4vkc95': {
+      'hu': '5+ fős társaságnak',
+      'en': 'For a group of 5+ people',
+    },
+    'cb8n7lh8': {
+      'hu': 'Ingyenes Shot',
+      'en': 'Free Shot',
+    },
+    'rzl6l6r1': {
+      'hu': '5+ fős társaságnak',
+      'en': 'For a group of 5+ people',
     },
     '2ew4jn6n': {
       'hu': 'Vissza',
-      'en': '',
+      'en': 'Back',
     },
   },
   // images
   {
     'ury959kc': {
       'hu': 'Képek',
-      'en': '',
+      'en': 'Pictures',
     },
     'm6ldn345': {
       'hu': 'Home',
-      'en': '',
+      'en': 'Home',
     },
   },
   // Gradient_Card
   {
     'lr5um9l5': {
       'hu': 'Verdák Quiznight ',
-      'en': '',
+      'en': 'Verdák Quiznight',
     },
     '2667oisc': {
       'hu': 'Szerda, 20:00',
-      'en': '',
+      'en': 'Wednesday, 8:00 PM',
     },
     '31o2cajx': {
       'hu': 'Megyek',
-      'en': '',
+      'en': 'I\'m going.',
+    },
+  },
+  // temp1_foglalsiKuponok
+  {
+    'dnn8a2nh': {
+      'hu': 'Csoportos akciók (3)',
+      'en': 'Group promotions (3)',
+    },
+    '7uxp5zlq': {
+      'hu': 'Ingyenes Shot',
+      'en': 'Free Shot',
+    },
+    'c9dgxore': {
+      'hu': '5+ fős társaságnak',
+      'en': 'For a group of 5+ people',
+    },
+    'db7ficja': {
+      'hu': 'Ingyenes Shot',
+      'en': 'Free Shot',
+    },
+    '2gslc29u': {
+      'hu': '5+ fős társaságnak',
+      'en': 'For a group of 5+ people',
+    },
+    'czbc2tpo': {
+      'hu': 'Ingyenes Shot',
+      'en': 'Free Shot',
+    },
+    'burhdg69': {
+      'hu': '5+ fős társaságnak',
+      'en': 'For a group of 5+ people',
+    },
+    'zzxtrnvi': {
+      'hu': 'Ingyenes Shot',
+      'en': 'Free Shot',
+    },
+    'wfa83ljf': {
+      'hu': '5+ fős társaságnak',
+      'en': 'For a group of 5+ people',
     },
   },
   // Miscellaneous

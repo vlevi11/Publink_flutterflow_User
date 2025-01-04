@@ -14,7 +14,7 @@ export '/user_interfaces/sub_folders/password_management_user/password_managemen
     show PasswordManagementUserWidget;
 export '/user_interfaces/sub_folders/event_details_user/event_details_user_widget.dart'
     show EventDetailsUserWidget;
-export '/user_interfaces/sub_folders/bar_details_proba1/bar_details_proba1_widget.dart'
-    show BarDetailsProba1Widget;
+export '/user_interfaces/sub_folders/bar_details_user/bar_details_user_widget.dart'
+    show BarDetailsUserWidget;
 export '/user_interfaces/sub_folders/images/images_widget.dart'
     show ImagesWidget;

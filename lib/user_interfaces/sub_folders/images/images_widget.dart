@@ -1,3 +1,5 @@
+import '/backend/api_requests/api_calls.dart';
+import '/flutter_flow/flutter_flow_expanded_image_view.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
@@ -79,68 +81,96 @@ class _ImagesWidgetState extends State<ImagesWidget> {
               Expanded(
                 child: Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
-                  child: MasonryGridView.builder(
-                    gridDelegate:
-                        const SliverSimpleGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2,
-                    ),
-                    crossAxisSpacing: 10.0,
-                    mainAxisSpacing: 10.0,
-                    itemCount: 5,
-                    padding: const EdgeInsets.fromLTRB(
-                      0,
-                      10.0,
-                      0,
-                      10.0,
-                    ),
-                    itemBuilder: (context, index) {
-                      return [
-                        () => Container(
-                              width: 100.0,
-                              height: 248.0,
-                              decoration: BoxDecoration(
-                                color:
-                                    FlutterFlowTheme.of(context).secondaryText,
-                                borderRadius: BorderRadius.circular(5.0),
+                  child: FutureBuilder<ApiCallResponse>(
+                    future: ImagesAPICall.call(),
+                    builder: (context, snapshot) {
+                      // Customize what your widget looks like when it's loading.
+                      if (!snapshot.hasData) {
+                        return Center(
+                          child: SizedBox(
+                            width: 50.0,
+                            height: 50.0,
+                            child: CircularProgressIndicator(
+                              valueColor: AlwaysStoppedAnimation<Color>(
+                                FlutterFlowTheme.of(context).primary,
                               ),
                             ),
-                        () => Container(
-                              width: 100.0,
-                              height: 196.0,
-                              decoration: BoxDecoration(
-                                color:
-                                    FlutterFlowTheme.of(context).secondaryText,
-                                borderRadius: BorderRadius.circular(5.0),
-                              ),
+                          ),
+                        );
+                      }
+                      final staggeredViewImagesAPIResponse = snapshot.data!;
+
+                      return Builder(
+                        builder: (context) {
+                          final image = ImagesAPICall.image(
+                                staggeredViewImagesAPIResponse.jsonBody,
+                              )?.toList() ??
+                              [];
+
+                          return MasonryGridView.builder(
+                            gridDelegate:
+                                const SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                              crossAxisCount: 2,
                             ),
-                        () => Container(
-                              width: 100.0,
-                              height: 189.0,
-                              decoration: BoxDecoration(
-                                color:
-                                    FlutterFlowTheme.of(context).secondaryText,
-                                borderRadius: BorderRadius.circular(5.0),
-                              ),
+                            crossAxisSpacing: 10.0,
+                            mainAxisSpacing: 10.0,
+                            itemCount: image.length,
+                            padding: const EdgeInsets.fromLTRB(
+                              0,
+                              10.0,
+                              0,
+                              10.0,
                             ),
-                        () => Container(
-                              width: 100.0,
-                              height: 93.0,
-                              decoration: BoxDecoration(
-                                color:
-                                    FlutterFlowTheme.of(context).secondaryText,
-                                borderRadius: BorderRadius.circular(5.0),
-                              ),
-                            ),
-                        () => Container(
-                              width: 100.0,
-                              height: 147.0,
-                              decoration: BoxDecoration(
-                                color:
-                                    FlutterFlowTheme.of(context).secondaryText,
-                                borderRadius: BorderRadius.circular(5.0),
-                              ),
-                            ),
-                      ][index]();
+                            shrinkWrap: true,
+                            itemBuilder: (context, imageIndex) {
+                              final imageItem = image[imageIndex];
+                              return Container(
+                                decoration: BoxDecoration(
+                                  color: FlutterFlowTheme.of(context)
+                                      .secondaryText,
+                                  borderRadius: BorderRadius.circular(5.0),
+                                ),
+                                child: InkWell(
+                                  splashColor: Colors.transparent,
+                                  focusColor: Colors.transparent,
+                                  hoverColor: Colors.transparent,
+                                  highlightColor: Colors.transparent,
+                                  onTap: () async {
+                                    await Navigator.push(
+                                      context,
+                                      PageTransition(
+                                        type: PageTransitionType.fade,
+                                        child: FlutterFlowExpandedImageView(
+                                          image: Image.network(
+                                            'https://publink.alsohaz.hu/uploads/$imageItem',
+                                            fit: BoxFit.contain,
+                                          ),
+                                          allowRotation: false,
+                                          tag:
+                                              'https://publink.alsohaz.hu/uploads/$imageItem',
+                                          useHeroAnimation: true,
+                                        ),
+                                      ),
+                                    );
+                                  },
+                                  child: Hero(
+                                    tag:
+                                        'https://publink.alsohaz.hu/uploads/$imageItem',
+                                    transitionOnUserGestures: true,
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(8.0),
+                                      child: Image.network(
+                                        'https://publink.alsohaz.hu/uploads/$imageItem',
+                                        fit: BoxFit.fill,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              );
+                            },
+                          );
+                        },
+                      );
                     },
                   ),
                 ),

@@ -67,7 +67,7 @@ class _PasswordManagementUserWidgetState
             ),
             Text(
               FFLocalizations.of(context).getText(
-                'pj29yqbr' /* Back */,
+                'pj29yqbr' /* Vissza */,
               ),
               style: FlutterFlowTheme.of(context).displaySmall.override(
                     fontFamily: 'Inter Tight',

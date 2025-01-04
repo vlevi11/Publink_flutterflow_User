@@ -60,58 +60,6 @@ class _HomePageUserWidgetState extends State<HomePageUserWidget>
           ),
         ],
       ),
-      'containerOnPageLoadAnimation2': AnimationInfo(
-        trigger: AnimationTrigger.onPageLoad,
-        effectsBuilder: () => [
-          FadeEffect(
-            curve: Curves.easeInOut,
-            delay: 0.0.ms,
-            duration: 400.0.ms,
-            begin: 0.0,
-            end: 1.0,
-          ),
-          MoveEffect(
-            curve: Curves.easeInOut,
-            delay: 0.0.ms,
-            duration: 400.0.ms,
-            begin: const Offset(0.0, 40.0),
-            end: const Offset(0.0, 0.0),
-          ),
-          ScaleEffect(
-            curve: Curves.easeInOut,
-            delay: 0.0.ms,
-            duration: 400.0.ms,
-            begin: const Offset(0.8, 0.8),
-            end: const Offset(1.0, 1.0),
-          ),
-        ],
-      ),
-      'containerOnPageLoadAnimation3': AnimationInfo(
-        trigger: AnimationTrigger.onPageLoad,
-        effectsBuilder: () => [
-          FadeEffect(
-            curve: Curves.easeInOut,
-            delay: 0.0.ms,
-            duration: 400.0.ms,
-            begin: 0.0,
-            end: 1.0,
-          ),
-          MoveEffect(
-            curve: Curves.easeInOut,
-            delay: 0.0.ms,
-            duration: 400.0.ms,
-            begin: const Offset(0.0, 40.0),
-            end: const Offset(0.0, 0.0),
-          ),
-          ScaleEffect(
-            curve: Curves.easeInOut,
-            delay: 0.0.ms,
-            duration: 400.0.ms,
-            begin: const Offset(0.8, 0.8),
-            end: const Offset(1.0, 1.0),
-          ),
-        ],
-      ),
       'textOnPageLoadAnimation1': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
@@ -131,7 +79,7 @@ class _HomePageUserWidgetState extends State<HomePageUserWidget>
           ),
         ],
       ),
-      'containerOnPageLoadAnimation4': AnimationInfo(
+      'containerOnPageLoadAnimation2': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
           FadeEffect(
@@ -169,7 +117,7 @@ class _HomePageUserWidgetState extends State<HomePageUserWidget>
           ),
         ],
       ),
-      'containerOnPageLoadAnimation5': AnimationInfo(
+      'containerOnPageLoadAnimation3': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
           FadeEffect(
@@ -215,7 +163,7 @@ class _HomePageUserWidgetState extends State<HomePageUserWidget>
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).secondaryText,
+          backgroundColor: FlutterFlowTheme.of(context).alternate,
           automaticallyImplyLeading: false,
           leading: Padding(
             padding: const EdgeInsetsDirectional.fromSTEB(6.0, 0.0, 0.0, 0.0),
@@ -224,7 +172,7 @@ class _HomePageUserWidgetState extends State<HomePageUserWidget>
               buttonSize: 10.0,
               icon: Icon(
                 Icons.person,
-                color: FlutterFlowTheme.of(context).primaryBackground,
+                color: FlutterFlowTheme.of(context).primaryText,
                 size: 40.0,
               ),
               onPressed: () async {
@@ -260,7 +208,7 @@ class _HomePageUserWidgetState extends State<HomePageUserWidget>
                   buttonSize: 50.0,
                   icon: Icon(
                     Icons.notifications_none,
-                    color: FlutterFlowTheme.of(context).primaryBackground,
+                    color: FlutterFlowTheme.of(context).primaryText,
                     size: 35.0,
                   ),
                   onPressed: () async {
@@ -285,6 +233,7 @@ class _HomePageUserWidgetState extends State<HomePageUserWidget>
         body: SafeArea(
           top: true,
           child: SingleChildScrollView(
+            primary: false,
             child: Column(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.start,
@@ -296,162 +245,144 @@ class _HomePageUserWidgetState extends State<HomePageUserWidget>
                   decoration: const BoxDecoration(),
                   child: SizedBox(
                     height: 200.0,
-                    child: SizedBox(
-                      width: double.infinity,
-                      height: 280.0,
-                      child: Stack(
-                        children: [
-                          PageView(
-                            controller: _model.pageViewController ??=
-                                PageController(initialPage: 0),
-                            scrollDirection: Axis.horizontal,
-                            children: [
-                              Column(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        16.0, 12.0, 16.0, 0.0),
-                                    child: Container(
-                                      width: double.infinity,
-                                      height: 230.0,
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryBackground,
-                                        image: DecorationImage(
-                                          fit: BoxFit.cover,
-                                          image: Image.asset(
-                                            'assets/images/c927e051-fafc-416e-b647-866d7e6740b5.jpeg',
-                                          ).image,
-                                        ),
-                                        boxShadow: const [
-                                          BoxShadow(
-                                            blurRadius: 4.0,
-                                            color: Color(0x46000000),
-                                            offset: Offset(
-                                              0.0,
-                                              2.0,
-                                            ),
-                                            spreadRadius: 1.0,
-                                          )
-                                        ],
-                                        borderRadius:
-                                            BorderRadius.circular(12.0),
-                                      ),
-                                    ).animateOnPageLoad(animationsMap[
-                                        'containerOnPageLoadAnimation1']!),
-                                  ),
-                                ],
-                              ),
-                              Column(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        16.0, 12.0, 16.0, 0.0),
-                                    child: Container(
-                                      width: double.infinity,
-                                      height: 230.0,
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryBackground,
-                                        image: DecorationImage(
-                                          fit: BoxFit.cover,
-                                          image: Image.network(
-                                            'https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmVhY2hlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60',
-                                          ).image,
-                                        ),
-                                        boxShadow: const [
-                                          BoxShadow(
-                                            blurRadius: 4.0,
-                                            color: Color(0x250F1113),
-                                            offset: Offset(
-                                              0.0,
-                                              1.0,
-                                            ),
-                                          )
-                                        ],
-                                        borderRadius:
-                                            BorderRadius.circular(12.0),
-                                      ),
-                                    ).animateOnPageLoad(animationsMap[
-                                        'containerOnPageLoadAnimation2']!),
-                                  ),
-                                ],
-                              ),
-                              Column(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        16.0, 12.0, 16.0, 0.0),
-                                    child: Container(
-                                      width: double.infinity,
-                                      height: 230.0,
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryBackground,
-                                        image: DecorationImage(
-                                          fit: BoxFit.cover,
-                                          image: Image.network(
-                                            'https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmVhY2hlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60',
-                                          ).image,
-                                        ),
-                                        boxShadow: const [
-                                          BoxShadow(
-                                            blurRadius: 4.0,
-                                            color: Color(0x250F1113),
-                                            offset: Offset(
-                                              0.0,
-                                              1.0,
-                                            ),
-                                          )
-                                        ],
-                                        borderRadius:
-                                            BorderRadius.circular(12.0),
-                                      ),
-                                    ).animateOnPageLoad(animationsMap[
-                                        'containerOnPageLoadAnimation3']!),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                          Align(
-                            alignment: const AlignmentDirectional(0.0, 1.0),
-                            child: Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 16.0),
-                              child: smooth_page_indicator.SmoothPageIndicator(
-                                controller: _model.pageViewController ??=
-                                    PageController(initialPage: 0),
-                                count: 3,
-                                axisDirection: Axis.horizontal,
-                                onDotClicked: (i) async {
-                                  await _model.pageViewController!
-                                      .animateToPage(
-                                    i,
-                                    duration: const Duration(milliseconds: 500),
-                                    curve: Curves.ease,
-                                  );
-                                  safeSetState(() {});
-                                },
-                                effect: smooth_page_indicator.SlideEffect(
-                                  spacing: 10.0,
-                                  radius: 8.0,
-                                  dotWidth: 10.0,
-                                  dotHeight: 10.0,
-                                  dotColor:
-                                      FlutterFlowTheme.of(context).accent1,
-                                  activeDotColor:
-                                      FlutterFlowTheme.of(context).primary,
-                                  paintStyle: PaintingStyle.fill,
+                    child: FutureBuilder<ApiCallResponse>(
+                      future: NewsAPICall.call(),
+                      builder: (context, snapshot) {
+                        // Customize what your widget looks like when it's loading.
+                        if (!snapshot.hasData) {
+                          return Center(
+                            child: SizedBox(
+                              width: 50.0,
+                              height: 50.0,
+                              child: CircularProgressIndicator(
+                                valueColor: AlwaysStoppedAnimation<Color>(
+                                  FlutterFlowTheme.of(context).primary,
                                 ),
                               ),
                             ),
-                          ),
-                        ],
-                      ),
+                          );
+                        }
+                        final pageViewNewsAPIResponse = snapshot.data!;
+
+                        return Builder(
+                          builder: (context) {
+                            final newsDB = NewsAPICall.image(
+                                  pageViewNewsAPIResponse.jsonBody,
+                                )?.toList() ??
+                                [];
+
+                            return SizedBox(
+                              width: double.infinity,
+                              height: 280.0,
+                              child: Stack(
+                                children: [
+                                  PageView.builder(
+                                    controller: _model.pageViewController ??=
+                                        PageController(
+                                            initialPage: max(
+                                                0, min(0, newsDB.length - 1))),
+                                    scrollDirection: Axis.horizontal,
+                                    itemCount: newsDB.length,
+                                    itemBuilder: (context, newsDBIndex) {
+                                      final newsDBItem = newsDB[newsDBIndex];
+                                      return Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        children: [
+                                          Padding(
+                                            padding:
+                                                const EdgeInsetsDirectional.fromSTEB(
+                                                    16.0, 12.0, 16.0, 0.0),
+                                            child: InkWell(
+                                              splashColor: Colors.transparent,
+                                              focusColor: Colors.transparent,
+                                              hoverColor: Colors.transparent,
+                                              highlightColor:
+                                                  Colors.transparent,
+                                              onTap: () async {
+                                                context.pushNamed('images');
+                                              },
+                                              child: Container(
+                                                width: double.infinity,
+                                                height: 230.0,
+                                                decoration: BoxDecoration(
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .secondaryBackground,
+                                                  image: DecorationImage(
+                                                    fit: BoxFit.cover,
+                                                    image: Image.network(
+                                                      'https://publink.alsohaz.hu/uploads/$newsDBItem',
+                                                    ).image,
+                                                  ),
+                                                  boxShadow: const [
+                                                    BoxShadow(
+                                                      blurRadius: 4.0,
+                                                      color: Color(0x46000000),
+                                                      offset: Offset(
+                                                        0.0,
+                                                        2.0,
+                                                      ),
+                                                      spreadRadius: 1.0,
+                                                    )
+                                                  ],
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          12.0),
+                                                ),
+                                              ),
+                                            ).animateOnPageLoad(animationsMap[
+                                                'containerOnPageLoadAnimation1']!),
+                                          ),
+                                        ],
+                                      );
+                                    },
+                                  ),
+                                  Align(
+                                    alignment: const AlignmentDirectional(0.0, 1.0),
+                                    child: Padding(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                          0.0, 0.0, 0.0, 16.0),
+                                      child: smooth_page_indicator
+                                          .SmoothPageIndicator(
+                                        controller: _model
+                                                .pageViewController ??=
+                                            PageController(
+                                                initialPage: max(0,
+                                                    min(0, newsDB.length - 1))),
+                                        count: newsDB.length,
+                                        axisDirection: Axis.horizontal,
+                                        onDotClicked: (i) async {
+                                          await _model.pageViewController!
+                                              .animateToPage(
+                                            i,
+                                            duration:
+                                                const Duration(milliseconds: 500),
+                                            curve: Curves.ease,
+                                          );
+                                          safeSetState(() {});
+                                        },
+                                        effect:
+                                            smooth_page_indicator.SlideEffect(
+                                          spacing: 10.0,
+                                          radius: 8.0,
+                                          dotWidth: 10.0,
+                                          dotHeight: 10.0,
+                                          dotColor: FlutterFlowTheme.of(context)
+                                              .accent1,
+                                          activeDotColor:
+                                              FlutterFlowTheme.of(context)
+                                                  .primary,
+                                          paintStyle: PaintingStyle.fill,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            );
+                          },
+                        );
+                      },
                     ),
                   ),
                 ),
@@ -742,7 +673,7 @@ class _HomePageUserWidgetState extends State<HomePageUserWidget>
                                             ),
                                           ),
                                         ).animateOnPageLoad(animationsMap[
-                                            'containerOnPageLoadAnimation4']!),
+                                            'containerOnPageLoadAnimation2']!),
                                       );
                                     },
                                   );
@@ -1056,7 +987,7 @@ class _HomePageUserWidgetState extends State<HomePageUserWidget>
                                             ),
                                           ),
                                         ).animateOnPageLoad(animationsMap[
-                                            'containerOnPageLoadAnimation5']!),
+                                            'containerOnPageLoadAnimation3']!),
                                       );
                                     },
                                   );
@@ -1065,6 +996,68 @@ class _HomePageUserWidgetState extends State<HomePageUserWidget>
                             },
                           ),
                         ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  width: MediaQuery.sizeOf(context).width * 1.0,
+                  decoration: const BoxDecoration(),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      Align(
+                        alignment: const AlignmentDirectional(-1.0, 0.0),
+                        child: Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              16.0, 0.0, 0.0, 0.0),
+                          child: Text(
+                            FFLocalizations.of(context).getText(
+                              'lkfwvmrd' /* Foglalások */,
+                            ),
+                            style: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .override(
+                                  fontFamily: 'Inter',
+                                  letterSpacing: 0.0,
+                                ),
+                          ),
+                        ),
+                      ),
+                      ListView(
+                        padding: const EdgeInsets.fromLTRB(
+                          0,
+                          0,
+                          0,
+                          20.0,
+                        ),
+                        shrinkWrap: true,
+                        scrollDirection: Axis.vertical,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
+                                16.0, 10.0, 16.0, 0.0),
+                            child: Container(
+                              width: MediaQuery.sizeOf(context).width * 1.0,
+                              height: 200.0,
+                              decoration: BoxDecoration(
+                                color: FlutterFlowTheme.of(context)
+                                    .secondaryBackground,
+                                boxShadow: const [
+                                  BoxShadow(
+                                    blurRadius: 4.0,
+                                    color: Color(0x33000000),
+                                    offset: Offset(
+                                      0.0,
+                                      2.0,
+                                    ),
+                                  )
+                                ],
+                                borderRadius: BorderRadius.circular(12.0),
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),

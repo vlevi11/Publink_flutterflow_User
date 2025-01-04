@@ -89,9 +89,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const EventDetailsUserWidget(),
         ),
         FFRoute(
-          name: 'bar_details_proba1',
-          path: '/barDetailsProba1',
-          builder: (context, params) => const BarDetailsProba1Widget(),
+          name: 'bar_details_user',
+          path: '/barDetailsUser',
+          builder: (context, params) => const BarDetailsUserWidget(),
         ),
         FFRoute(
           name: 'images',

@@ -38,7 +38,7 @@ class _ProfileUserWidgetState extends State<ProfileUserWidget> {
       key: scaffoldKey,
       backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
       appBar: AppBar(
-        backgroundColor: FlutterFlowTheme.of(context).secondaryText,
+        backgroundColor: FlutterFlowTheme.of(context).alternate,
         automaticallyImplyLeading: false,
         title: Row(
           mainAxisSize: MainAxisSize.max,
