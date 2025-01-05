@@ -68,6 +68,11 @@ class AppStateNotifier extends ChangeNotifier {
     showSplashImage = false;
     notifyListeners();
   }
+
+  void setUserType(String type) {
+    String userType = type;
+    notifyListeners();
+  }
 }
 
 GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(

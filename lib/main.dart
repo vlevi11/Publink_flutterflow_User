@@ -193,3 +193,50 @@ class _NavBarPageState extends State<NavBarPage> {
     );
   }
 }
+
+
+class BarmanNavBarPage extends StatefulWidget {
+  const BarmanNavBarPage({super.key});
+
+  @override
+  _BarmanNavBarPageState createState() => _BarmanNavBarPageState();
+}
+
+class _BarmanNavBarPageState extends State<BarmanNavBarPage> {
+  String _currentPageName = 'HomePage_barman';
+  late Widget? _currentPage;
+
+  @override
+  void initState() {
+    super.initState();
+    _currentPage = null;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final tabs = {
+      'HomePage_barman': const HomePageBarmanWidget(),
+      'Events_barman': const EventsBarmanWidget(),
+      'Reservations_barman': const ReservationsBarmanWidget(),
+      'Profile_barman': const ProfileBarmanWidget(),
+    };
+    final currentIndex = tabs.keys.toList().indexOf(_currentPageName);
+
+    return Scaffold(
+      body: _currentPage ?? tabs[_currentPageName],
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: currentIndex,
+        onTap: (i) => setState(() {
+          _currentPage = null;
+          _currentPageName = tabs.keys.toList()[i];
+        }),
+        items: <BottomNavigationBarItem>[
+          const BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          const BottomNavigationBarItem(icon: Icon(Icons.event), label: "Events"),
+          const BottomNavigationBarItem(icon: Icon(Icons.book), label: "Reservations"),
+          const BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
+        ],
+      ),
+    );
+  }
+}
