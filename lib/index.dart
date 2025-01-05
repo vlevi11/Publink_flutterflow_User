@@ -19,9 +19,7 @@ export '/user_interfaces/sub_folders/bar_details_user/bar_details_user_widget.da
     show BarDetailsUserWidget;
 export '/user_interfaces/sub_folders/images/images_widget.dart'
     show ImagesWidget;
-<<<<<<< Updated upstream
 export '/auth2/auth2_widget.dart' show Auth2Widget;
-=======
 
 //BARMAN PAGES
 export '/b_a_r_m_a_n_interfaces/home_page_barman/home_page_barman_widget.dart'
@@ -44,6 +42,3 @@ export '/reservation_settings_barman/reservation_settings_barman_widget.dart'
     show ReservationSettingsBarmanWidget;
 export '/b_a_r_m_a_n_interfaces/sub_folders/event_add_barman/event_add_barman_widget.dart'
     show EventAddBarmanWidget;
-
-// EXPORT PAGES
->>>>>>> Stashed changes
