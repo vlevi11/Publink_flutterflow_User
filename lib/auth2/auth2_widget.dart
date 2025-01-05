@@ -1087,14 +1087,44 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                                 0.0, 16.0),
                                                     child: FFButtonWidget(
                                                       onPressed: () async {
-                                                        GoRouter.of(context)
-                                                            .prepareAuthEvent();
-                                                        await authManager
-                                                            .signIn();
+                                                        Function() navigate =
+                                                            () {};
+                                                        _model.apiResultwou =
+                                                            await LogInAPICall
+                                                                .call(
+                                                          email: _model
+                                                              .emailAddressTextController
+                                                              .text,
+                                                          password: _model
+                                                              .passwordTextController
+                                                              .text,
+                                                        );
 
-                                                        context.goNamedAuth(
-                                                            'HomePage_user',
-                                                            context.mounted);
+                                                        if ((_model.apiResultwou
+                                                                ?.succeeded ??
+                                                            true)) {
+                                                          GoRouter.of(context)
+                                                              .prepareAuthEvent();
+                                                          await authManager
+                                                              .signIn(
+                                                            authenticationToken:
+                                                                LogInAPICall
+                                                                    .jwt(
+                                                              (_model.apiResultwou
+                                                                      ?.jsonBody ??
+                                                                  ''),
+                                                            ),
+                                                          );
+                                                          navigate = () =>
+                                                              context.goNamedAuth(
+                                                                  'HomePage_user',
+                                                                  context
+                                                                      .mounted);
+                                                        }
+
+                                                        navigate();
+
+                                                        safeSetState(() {});
                                                       },
                                                       text: FFLocalizations.of(
                                                               context)

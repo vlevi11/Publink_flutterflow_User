@@ -185,12 +185,18 @@ class LogInAPICall {
     String? email = '',
     String? password = '',
   }) async {
+    final ffApiRequestBody = '''
+{
+  "email": "${escapeStringForJson(email)}",
+  "password": "${escapeStringForJson(password)}"
+}''';
     return ApiManager.instance.makeApiCall(
       callName: 'LogInAPI',
-      apiUrl: 'https://publink.alsohaz.hu/api/auth/login$email',
+      apiUrl: 'https://publink.alsohaz.hu/api/auth/login',
       callType: ApiCallType.POST,
       headers: {},
       params: {},
+      body: ffApiRequestBody,
       bodyType: BodyType.JSON,
       returnBody: true,
       encodeBodyUtf8: false,
@@ -200,6 +206,55 @@ class LogInAPICall {
       alwaysAllowBody: false,
     );
   }
+
+  static String? jwt(dynamic response) => castToType<String>(getJsonField(
+        response,
+        r'''$.token''',
+      ));
+  static dynamic userItem(dynamic response) => getJsonField(
+        response,
+        r'''$.user''',
+      );
+}
+
+class BarsFilteredAPICall {
+  static Future<ApiCallResponse> call() async {
+    return ApiManager.instance.makeApiCall(
+      callName: 'BarsFilteredAPI',
+      apiUrl: 'https://publink.alsohaz.hu/api/pub/filter',
+      callType: ApiCallType.GET,
+      headers: {
+        'Authorization':
+            'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJsZXZpMTFAcHVibGluay5odSIsImV4cCI6MTczNjQ1NDEzMSwiaXNzIjoiQWxzb2hhei5odSBLZnQiLCJhdWQiOiJQdWJsaW5rIHVzZXJzIn0.BSNNf60Eu2vjjvjRhw3JXuMEaqUV5ng47ysB3Ayr8Qo',
+      },
+      params: {},
+      returnBody: true,
+      encodeBodyUtf8: false,
+      decodeUtf8: false,
+      cache: false,
+      isStreamingApi: false,
+      alwaysAllowBody: false,
+    );
+  }
+
+  static List<String>? barName(dynamic response) => (getJsonField(
+        response,
+        r'''$.items[:].pubName''',
+        true,
+      ) as List?)
+          ?.withoutNulls
+          .map((x) => castToType<String>(x))
+          .withoutNulls
+          .toList();
+  static List? bars(dynamic response) => getJsonField(
+        response,
+        r'''$.items''',
+        true,
+      ) as List?;
+  static int? fiteredNumber(dynamic response) => castToType<int>(getJsonField(
+        response,
+        r'''$.totalItems''',
+      ));
 }
 
 class ApiPagingParams {

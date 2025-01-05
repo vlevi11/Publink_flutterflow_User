@@ -37,6 +37,8 @@ class Auth2Model extends FlutterFlowModel<Auth2Widget> {
   TextEditingController? passwordTextController;
   late bool passwordVisibility;
   String? Function(BuildContext, String?)? passwordTextControllerValidator;
+  // Stores action output result for [Backend Call - API (LogInAPI)] action in Button widget.
+  ApiCallResponse? apiResultwou;
 
   @override
   void initState(BuildContext context) {
